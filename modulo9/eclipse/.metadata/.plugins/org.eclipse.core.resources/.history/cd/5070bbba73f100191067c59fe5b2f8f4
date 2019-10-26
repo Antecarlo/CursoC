@@ -1,0 +1,26 @@
+/*
+ * Fichero.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FICHERO_H_
+#define FICHERO_H_
+
+#include <string>
+#include <vector>
+
+class Fichero {
+
+	std::string nombre;
+
+public:
+	Fichero(std::string nombre);
+
+	std::vector<std::vector<std::string>> leerTabla();
+
+	virtual ~Fichero();
+};
+
+#endif /* FICHERO_H_ */

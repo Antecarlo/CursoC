@@ -1,0 +1,20 @@
+11:45:58 **** Build of configuration Debug for project puntos2_static ****
+make all 
+Building file: ../Punto2D.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Punto2D.d" -MT"Punto2D.o" -o "Punto2D.o" "../Punto2D.cpp"
+Finished building: ../Punto2D.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: puntos2_static
+Invoking: GCC C++ Linker
+g++  -o "puntos2_static"  ./Punto2D.o ./main.o   
+Finished building target: puntos2_static
+ 
+
+11:46:01 Build Finished. 0 errors, 0 warnings. (took 2s.495ms)
+

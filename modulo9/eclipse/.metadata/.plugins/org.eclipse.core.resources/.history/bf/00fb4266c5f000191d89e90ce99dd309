@@ -1,0 +1,26 @@
+/*
+ * Estilo.h
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ESTILO_H_
+#define ESTILO_H_
+
+#include <string>
+#include "tipos.h"
+
+class Estilo {
+
+	bool negrita;
+	std::string tipoletra;
+	int tamanyo;
+	std::string color;
+
+public:
+	Estilo();
+	virtual ~Estilo();
+};
+
+#endif /* ESTILO_H_ */

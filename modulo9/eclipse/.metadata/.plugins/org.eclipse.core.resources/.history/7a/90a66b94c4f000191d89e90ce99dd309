@@ -1,0 +1,17 @@
+/*
+ * Estilo.h
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ESTILO_H_
+#define ESTILO_H_
+
+class Estilo {
+public:
+	Estilo();
+	virtual ~Estilo();
+};
+
+#endif /* ESTILO_H_ */

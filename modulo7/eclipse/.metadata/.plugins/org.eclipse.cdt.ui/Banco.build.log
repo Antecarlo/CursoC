@@ -1,0 +1,15 @@
+14:22:21 **** Incremental Build of configuration Debug for project Banco ****
+make all 
+Building file: ../Cuenta.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++17 -MMD -MP -MF"Cuenta.d" -MT"Cuenta.o" -o "Cuenta.o" "../Cuenta.cpp"
+Finished building: ../Cuenta.cpp
+ 
+Building target: Banco
+Invoking: GCC C++ Linker
+g++  -o "Banco"  ./Banco.o ./Cajero.o ./Cliente.o ./Cuenta.o ./Movimiento.o ./Tarjeta.o ./main.o   
+Finished building target: Banco
+ 
+
+14:22:24 Build Finished. 0 errors, 0 warnings. (took 3s.389ms)
+

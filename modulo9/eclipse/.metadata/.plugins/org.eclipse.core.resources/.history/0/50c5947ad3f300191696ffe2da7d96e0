@@ -1,0 +1,26 @@
+/*
+ * SinCombustible.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "SinCombustible.h"
+
+
+SinCombustible::SinCombustible() {
+}
+
+void SinCombustible::frenar(Coche &coche) {
+}
+
+void SinCombustible::acelerar(Coche &coche) {
+}
+
+void SinCombustible::contacto(Coche &coche) {
+}
+
+SinCombustible::~SinCombustible() {
+	// TODO Auto-generated destructor stub
+}
+

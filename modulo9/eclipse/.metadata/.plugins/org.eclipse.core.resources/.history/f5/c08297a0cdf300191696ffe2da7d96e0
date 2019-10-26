@@ -1,0 +1,29 @@
+/*
+ * Coche.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Coche.h"
+#include "Apagado.h"
+
+Coche::Coche(int combustible=100,int velocidad=0,std::shared_ptr<State> inicio): estado(inicio),combustible(combustible), velocidad(velocidad) {
+}
+
+void Coche::frenar() {
+	this->estado->frenar(*this);
+}
+
+void Coche::acelerar() {
+	this->estado->acelerar(*this);
+}
+
+void Coche::contacto() {
+	this->estado->contacto(*this);
+}
+
+Coche::~Coche() {
+	// TODO Auto-generated destructor stub
+}
+

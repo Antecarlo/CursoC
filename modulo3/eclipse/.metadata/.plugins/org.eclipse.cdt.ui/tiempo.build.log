@@ -1,0 +1,24 @@
+08:26:54 **** Incremental Build of configuration Debug for project tiempo ****
+make all 
+Building file: ../Hora.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hora.d" -MT"Hora.o" -o "Hora.o" "../Hora.cpp"
+Finished building: ../Hora.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:15: warning: unused variable ‘x’ [-Wunused-variable]
+  unsigned int x=1000;
+               ^
+Finished building: ../main.cpp
+ 
+Building target: tiempo
+Invoking: GCC C++ Linker
+g++  -o "tiempo"  ./Hora.o ./main.o   
+Finished building target: tiempo
+ 
+
+08:27:00 Build Finished. 0 errors, 1 warnings. (took 5s.872ms)
+

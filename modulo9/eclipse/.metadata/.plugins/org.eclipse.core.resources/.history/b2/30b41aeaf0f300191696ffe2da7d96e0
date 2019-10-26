@@ -1,0 +1,26 @@
+/*
+ * Proxy.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef PROXY_H_
+#define PROXY_H_
+
+#include "Operaciones.h"
+
+class Proxy: public Operaciones {
+
+	bool checkURL(std::string url);
+	Servidor servidor;
+
+public:
+	Proxy();
+
+	void descargarURL (std::string url);
+
+	virtual ~Proxy();
+};
+
+#endif /* PROXY_H_ */

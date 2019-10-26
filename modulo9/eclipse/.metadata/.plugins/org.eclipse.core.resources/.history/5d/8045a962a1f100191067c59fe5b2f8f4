@@ -1,0 +1,17 @@
+/*
+ * State.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "State.h"
+
+State::State(std::unique_ptr<Coche> coche) {
+	this->coche = std::make_unique<Coche>(coche);
+}
+
+State::~State() {
+	// TODO Auto-generated destructor stub
+}
+

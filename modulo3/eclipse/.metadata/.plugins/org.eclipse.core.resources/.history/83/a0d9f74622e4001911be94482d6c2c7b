@@ -1,0 +1,33 @@
+/*
+ * FechaHora.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FechaHora.h"
+#include<iostream>
+
+FechaHora::FechaHora() {
+	// TODO Auto-generated constructor stub
+
+}
+
+FechaHora::FechaHora(int horas, int minutos, int segundos, int d, int M,
+		int y): Hora(horas,minutos,segundos),Fecha(d,M,y) {
+}
+
+std::ostream & operator<<(std::ostream & os, const FechaHora & fechaHora){
+	return os << std::setw(2) << std::setfill('0') << hora.h << ":"
+				<< std::setw(2) << std::setfill('0') << hora.m << ":"
+				<< std::setw(2) << std::setfill('0') << hora.s;
+}
+
+void FechaHora::imprimir() {
+	std::cout << << std::endl;
+}
+
+FechaHora::~FechaHora() {
+	// TODO Auto-generated destructor stub
+}
+

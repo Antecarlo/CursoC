@@ -1,0 +1,24 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main(){
+	char linea[1024];
+	string datos;
+
+	ifstream os("Fichero", ios::in);
+	if (!os){
+		cerr << "Error al abrir el fichero" << endl;
+		return;
+	}
+
+	while (os.getline(linea, 1024)){
+		datos = linea;
+
+		cout << linea << endl;
+		
+	}
+
+	os.close();	
+}

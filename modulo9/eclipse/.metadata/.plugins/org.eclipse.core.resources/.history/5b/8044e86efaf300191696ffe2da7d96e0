@@ -1,0 +1,18 @@
+/*
+ * ManejadorSMS.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ManejadorSMS.h"
+
+ManejadorSMS::ManejadorSMS() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ManejadorSMS::~ManejadorSMS() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,23 @@
+/*
+ * Casilla.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Casilla.h"
+
+namespace std {
+namespace literals {
+
+Casilla::Casilla() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Casilla::~Casilla() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

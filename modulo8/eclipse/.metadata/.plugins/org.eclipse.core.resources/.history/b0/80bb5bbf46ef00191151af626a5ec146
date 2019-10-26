@@ -1,0 +1,22 @@
+/*
+ * Cajero.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Cajero.h"
+#include <iostream>
+
+Cajero::Cajero() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Tarjeta Cajero::leerTarjeta() {
+}
+
+Cajero::~Cajero() {
+	// TODO Auto-generated destructor stub
+}
+

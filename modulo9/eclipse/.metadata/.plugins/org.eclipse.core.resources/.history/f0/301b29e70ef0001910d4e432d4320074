@@ -1,0 +1,25 @@
+/*
+ * FactoriaPrototipos.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FACTORIAPROTOTIPOS_H_
+#define FACTORIAPROTOTIPOS_H_
+
+#include <map>
+#include <string>
+
+#include "Figura.h"
+
+class FactoriaPrototipos {
+
+	std::map<std::string,Figura>;
+
+public:
+	FactoriaPrototipos();
+	virtual ~FactoriaPrototipos();
+};
+
+#endif /* FACTORIAPROTOTIPOS_H_ */

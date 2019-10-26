@@ -1,0 +1,25 @@
+/*
+ * JefeProyecto.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef JEFEPROYECTO_H_
+#define JEFEPROYECTO_H_
+
+#include "Empleado.h"
+
+namespace std {
+namespace literals {
+
+class JefeProyecto: public Empleado {
+public:
+	JefeProyecto();
+	virtual ~JefeProyecto();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* JEFEPROYECTO_H_ */

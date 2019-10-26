@@ -1,0 +1,18 @@
+/*
+ * Coche.cpp
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Coche.h"
+
+Coche::Coche() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Coche::~Coche() {
+	// TODO Auto-generated destructor stub
+}
+

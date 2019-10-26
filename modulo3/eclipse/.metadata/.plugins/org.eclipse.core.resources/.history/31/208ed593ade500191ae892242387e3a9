@@ -1,0 +1,33 @@
+/*
+ * Tablero.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Tablero.h"
+
+Tablero::Tablero(int n, int numBombas): n(n),numBombas(numBombas){
+
+	//Construir tableros
+	this->construirTablero();
+
+	//Colocar bombas
+
+	//Calcular contador
+
+}
+
+void Tablero::vistaJuego() {
+}
+
+void Tablero::vistaTraza() {
+}
+
+void Tablero::construirTablero() {
+}
+
+Tablero::~Tablero() {
+	// TODO Auto-generated destructor stub
+}
+

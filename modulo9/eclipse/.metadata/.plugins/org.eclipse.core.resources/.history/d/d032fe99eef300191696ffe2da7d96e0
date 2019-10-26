@@ -1,0 +1,18 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Operaciones.h"
+#include "Proxy.h"
+#include "Sevidor.h"
+
+int main(){
+
+	Proxy proxy("http://www.instagram.com");
+
+}
+
+

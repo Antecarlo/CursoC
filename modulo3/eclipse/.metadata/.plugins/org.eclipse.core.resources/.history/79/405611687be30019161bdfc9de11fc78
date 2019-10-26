@@ -1,0 +1,24 @@
+/*
+ * Circulo.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef CIRCULO_H_
+#define CIRCULO_H_
+
+#include "Figura2D.h"
+#include<string>
+
+
+class Circulo: public Figura2D {
+
+	double ratio;
+
+public:
+	Circulo(std::string etiqueta="";std::string color="black",double ratio=5.0);
+	virtual ~Circulo();
+};
+
+#endif /* CIRCULO_H_ */

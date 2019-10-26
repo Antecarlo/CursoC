@@ -1,0 +1,16 @@
+/*
+ * Evento.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Evento.h"
+
+Evento::Evento(int numD, int d=1, int M=1, int y=1970): Fecha(d,M,y) {
+	// TODO Auto-generated constructor stub
+}
+
+Evento::~Evento() {
+	// TODO Auto-generated destructor stub
+}

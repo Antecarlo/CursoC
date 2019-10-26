@@ -1,0 +1,47 @@
+/*
+ * Fecha.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Fecha.h"
+#include <iostream>
+#include <iomanip>
+#include <sstream>
+#include <vector>
+
+Fecha::Fecha(int d,int M,int y): d(d),M(M),y(y){
+}
+
+std::ostream & operator<<(std::ostream & os, const Fecha & fecha){
+		return os << std::setw(2) << std::setfill('0') << fecha.d << "/"
+				<< std::setw(2) << std::setfill('0') << fecha.M << "/"
+				<< std::setw(2) << std::setfill('0') << fecha.y;
+}
+
+void Fecha::imprimir() const{
+	std::cout << *this << std::endl;
+}
+
+Fecha::Fecha(std::string fecha) {
+	std::vector<std::string> campos;
+
+	campos=getColumnas (fecha, '/');
+}
+
+Fecha::~Fecha() {
+	// TODO Auto-generated destructor stub
+}
+
+std::vector<std::string> getColumnas(std::string linea, char delim=';'){
+	std::vector <std::string> columnas;
+	std::istringstream ss(linea);
+	std::string token;
+
+	while (std::getline(ss,token,delim))
+		columnas.push_back(token);
+
+	return columnas;
+}
+

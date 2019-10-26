@@ -1,0 +1,25 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Banco.h"
+#include "Cajero.h"
+#include "Cliente.h"
+#include "Cuenta.h"
+#include "Tarjeta.h"
+
+
+
+int main(){
+
+	Banco banco("BANCO X");
+	banco.addCuenta(Cuenta(1111,Cliente("Ana Gomez",600451515),Tarjeta(1111,1111),1000.0));
+	banco.listarCuentas();
+	//Cajero cajero;
+
+	//cajero.identificacion(banco,1221, 4584);
+
+}

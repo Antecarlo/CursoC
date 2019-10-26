@@ -1,0 +1,23 @@
+/*
+ * Coordenada.cpp
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Coordenada.h"
+
+Coordenada::Coordenada() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Coordenada::Coordenada(int fila, int col) {
+}
+
+Coordenada Coordenada::getAleatorio(int nMax) {
+}
+
+Coordenada::~Coordenada() {
+	// TODO Auto-generated destructor stub
+}

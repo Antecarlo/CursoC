@@ -1,0 +1,17 @@
+/*
+ * Apagado.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef APAGADO_H_
+#define APAGADO_H_
+
+class Apagado {
+public:
+	Apagado();
+	virtual ~Apagado();
+};
+
+#endif /* APAGADO_H_ */

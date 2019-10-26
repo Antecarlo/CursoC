@@ -1,0 +1,75 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 4 oct. 2019
+ *      Author: antonio
+ */
+
+#include<iostream>
+#include <stdexcept>
+
+
+#include "Fecha.h"
+#include "Hora.h"
+#include "Agenda.h"
+#include "AgendaException.h"
+
+void testFecha(){
+	Fecha f1(8,1,2019);
+	Fecha f2(7,2,2019);
+
+	if(f1<f2)
+		std::cout << "f1 < f2" << std::endl;
+	else
+		std::cout << "f2 <= f1" << std::endl;
+}
+
+void testAgenda(){
+	Agenda a;
+	a.addEvento(Fecha(7,10,2019),Hora(8,15),"Curso C++");
+	a.addEvento(Fecha(7,10,2019),Hora(11,0),"Descanso");
+
+	try{
+		a.listar(Fecha(1,1,2019));
+
+	}catch(AgendaException & e){
+		std::cerr << e.what() << std::endl;
+	}
+
+	a.listar();
+
+	//Probar a recuperar el evento
+	try{
+		std::cout << "Evento: " << a.getEvento(Fecha(5,10,2019), Hora(12)) << std::endl;
+	}catch(AgendaException & e){
+		std::cerr << e.what() << std::endl;
+	}
+
+	try{
+		a.listar(Fecha(1,1,2019));
+	}catch(AgendaException & e){
+		std::cerr << e.what() << std::endl;
+	}
+
+	try{
+		std::cout << "Evento: " << a.getEvento(Fecha(7,10,2019), Hora(18,30)) << std::endl;
+	}catch(AgendaException & e){
+		std::cerr << e.what() << std::endl;
+	}
+
+	//Prueba borrar una fecha
+	try{
+		if(a.borrar(Fecha(8,8,2020)))
+			std::cout << "Eventos eliminados ..." << std::endl;
+	}catch(std::out_of_range & e){
+		std::cerr << e.what() << std::endl;
+	}
+
+}
+
+int main(){
+
+	//testFecha();
+	testAgenda();
+}
+

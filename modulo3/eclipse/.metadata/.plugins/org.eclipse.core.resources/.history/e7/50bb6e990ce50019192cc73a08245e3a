@@ -1,0 +1,23 @@
+/*
+ * Coordenada.cpp
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Coordenada.h"
+
+namespace std {
+namespace literals {
+
+Coordenada::Coordenada() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Coordenada::~Coordenada() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

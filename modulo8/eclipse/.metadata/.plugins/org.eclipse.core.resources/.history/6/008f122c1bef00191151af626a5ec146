@@ -1,0 +1,50 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+#include <iostream>
+#include "stdio.h"
+#include <string.h>
+#include <vector>
+#include <fstream>
+#include <stdexcept>
+
+#include "Fichero.h"
+#include "PruebaIdioma.h"
+
+void pruebaIdioma(std::string path){
+
+	std::string nombre, telefono, direccion;
+	PruebaIdioma idioma(path);
+
+	std::cout << idioma.getKey("name") << std::endl;
+	std::cin >> nombre;
+
+	std::cout << idioma.getKey("phone") << std::endl;
+	std::cin >> telefono;
+
+	std::cout << idioma.getKey("address") << std::endl;
+	std::cin >> direccion;
+
+}
+
+int main(int argc, char *argv[]){
+
+	if(argc==2){
+		std::string end=".ini";
+		std::cout << argv[1]+end << std::endl;
+		Fichero fichero(argv[1]+end);
+		fichero.imprimirMapa();
+		PruebaIdioma idioma(std::string(argv[1])+"_config"+end);
+
+	}else{
+		std::cout << "Few arguments... :"<< argc << std::endl;
+
+	}
+
+}
+
+

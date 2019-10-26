@@ -1,0 +1,18 @@
+/*
+ * pruebaIdioma.cpp
+ *
+ *  Created on: 15 oct. 2019
+ *      Author: antonio
+ */
+
+#include "pruebaIdioma.h"
+
+pruebaIdioma::pruebaIdioma() {
+	// TODO Auto-generated constructor stub
+
+}
+
+pruebaIdioma::~pruebaIdioma() {
+	// TODO Auto-generated destructor stub
+}
+

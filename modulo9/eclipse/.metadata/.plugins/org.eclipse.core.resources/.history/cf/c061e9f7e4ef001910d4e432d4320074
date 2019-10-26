@@ -1,0 +1,18 @@
+/*
+ * GalaxyA.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "GalaxyA.h"
+
+GalaxyA::GalaxyA() {
+	// TODO Auto-generated constructor stub
+
+}
+
+GalaxyA::~GalaxyA() {
+	// TODO Auto-generated destructor stub
+}
+

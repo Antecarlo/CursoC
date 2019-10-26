@@ -1,0 +1,74 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+
+#include <iostream>
+#include <fstream>
+#include <vector>
+
+#include "util.h"
+
+std::vector <std::vector<int>> cargaTabla(std::string path, char delim=';'){
+	const char *nombre = path.c_str();
+	std::ifstream fich(path,std::ios::in);
+	//std::ifstream fich(nombre,std::ios::in);
+
+	std::vector<std::vector<int>> aux;
+	std::string linea;
+	std::string token;
+	std::istringstream ss(linea);
+
+	int aux2;
+	int i=0,j=0;
+
+	if(!fich){
+		std::cout << "Error, no se encuentra el fichero" << std::endl;
+		std::exit(1);
+	}
+
+	while(std::getline(ss,token,delim)){
+		aux2=stoi(linea);
+		//std::cout << linea << std::endl;
+		aux[i++][j]=aux2;
+		if()
+	}
+	fich.close();
+	return aux;
+
+}
+
+void imprimirTabla(std::vector<std::vector<int>> tabla){
+	for (auto v : tabla){
+		for (auto vv : v){
+			std::cout << vv << " ";
+		}
+		std::cout << std::endl;
+	}
+}
+
+
+void leerCSV(){
+	std::ifstream fich("./datos.csv",std::ios::in);
+	std::string linea;
+	char cad[1024];
+
+	if(!fich){
+		std::cout << "Error, no se encuentra el fichero" << std::endl;
+		std::exit(1);
+	}
+
+	while(fich.getline(cad,1024)){
+		linea= std::string(cad);
+		std::cout << linea << std::endl;
+	}
+	fich.close();
+}
+
+
+int main(int argc, char *argv[]){
+ leerCSV();
+}

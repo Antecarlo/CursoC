@@ -1,0 +1,18 @@
+/*
+ * EstrategiaSortCPP.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "EstrategiaSortCPP.h"
+
+EstrategiaSortCPP::EstrategiaSortCPP() {
+	// TODO Auto-generated constructor stub
+
+}
+
+EstrategiaSortCPP::~EstrategiaSortCPP() {
+	// TODO Auto-generated destructor stub
+}
+

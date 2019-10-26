@@ -1,0 +1,20 @@
+/*
+ * Sms.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Sms.h"
+
+
+
+Sms::Sms(long numD, int d, int M, int y): Evento(numD,d,M,y) {
+}
+
+Sms::~Sms() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

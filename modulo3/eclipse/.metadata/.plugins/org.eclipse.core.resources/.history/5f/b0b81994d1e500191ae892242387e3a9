@@ -1,0 +1,137 @@
+/*
+ * Tablero.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Tablero.h"
+#include <vector>
+
+Tablero::Tablero(int n, int numBombas): n(n),numBombas(numBombas){
+
+	//Construir tableros
+	this->construirTablero();
+
+	//Colocar bombas
+	this->colocarBombas();
+}
+
+void Tablero::vistaJuego() {
+
+	std::cout << "VISTA JUEGO: " << std::endl;
+	for(int i=0; i<this->n; i++){
+		for(int j=0;j<this->n;j++)
+			this->tablero[i][j].vistaJuego();
+		std::cout << std::endl;
+	}
+
+}
+
+void Tablero::vistaTraza() {
+
+	std::cout << "VISTA TRAZA: " << std::endl;
+	for(int i=0; i<this->n; i++){
+		for(int j=0;j<this->n;j++)
+			this->tablero[i][j].vistaTraza();
+		std::cout << std::endl;
+	}
+}
+
+void Tablero::construirTablero() {
+
+	for (int i=0;i<this->n;i++){
+			std::vector<Casilla> fila;
+			for(int j=0; j<this->n;j++)
+				fila.push_back(Casilla(Coordenada(i,j),false,0));
+
+			this->tablero.push_back(fila);
+	}
+/*
+	for(int i=0; i<n; i++){
+		for(int j=0;j<n;j++)
+			(this->tablero[i][j]).setCoor(Coordenada(i,j));
+	}
+*/
+}
+
+void Tablero::colocarBombas() {
+
+	std::vector <Coordenada> bombas = Coordenada::getCoordenadasAleatorias(numBombas, n);
+	std::vector <Coordenada> adyacentes;
+
+	for(Coordenada coor : bombas){
+
+		//Colocar la bomba en la casilla del tablero
+		this->getCasilla(coor).setBomba();
+
+		//Calcular las casillas adyacentes a la bomba
+		adyacentes = coor.getCoordenadasAdyacentes(this->n);
+
+		//Calcular los contadores:
+		this->calcularContador(adyacentes);
+	}
+}
+
+void Tablero::calcularContador(std::vector<Coordenada> adyacentes) {
+
+	for(auto ad: adyacentes){
+		//Recuperar la casilla del tablero a partir de una coordenada:
+		Casilla & casilla=this->getCasilla(ad); //Tiene que ser referencia para que cambie el originarl
+		if(!casilla.isBomba())
+			++casilla; //Para incrementar el contador
+			//++this->getCasilla(ad);
+	}
+}
+
+void Tablero::abrirCeros(Casilla & casilla){
+	std::vector<Coordenada> adyacentes = casilla.getCoor().getCoordenadasAdyacentes(this->n);
+
+	for(auto c:adyacentes){
+		Casilla & casilla = this->getCasilla(c);
+		if(!casilla.isAbierta()){
+			if(casilla.getContador()==0){
+				//Abre y sigue expandiendo
+				casilla.abrir();
+				this->abrirCeros(casilla);
+			}else if (!casilla.isBomba())
+				//Tiene un contador que no es bomba, la abre pero no expande
+				casilla.abrir();
+		}
+	}
+}
+
+Casilla & Tablero::getCasilla(Coordenada c) {
+		return this->tablero[c.getFil()][c.getCol()];
+}
+
+bool Tablero::abrirCasilla(Coordenada c) {
+	Casilla & casilla = this->getCasilla(c);
+	if(c.cumpleLimite(this->n)){
+		if(casilla.isBomba()){
+			this->abrirBombas();
+			std::cout << "GAME OVER" << std::endl;
+			return true;
+		}else{
+			casilla.abrir();
+			if(casilla.getContador()==0)
+				this->abrirCeros(casilla);
+			return false;
+		}
+	}
+	return false;
+}
+
+void Tablero::abrirBombas() {
+	for (int i=0;i<this->n;i++){
+				for(int j=0; j<this->n;j++)
+					if(this->tablero[i][j].isBomba() && !this->tablero[i][j].isAbierta())
+						this->tablero[i][j].abrir();
+		}
+	this->vistaJuego();
+}
+
+Tablero::~Tablero() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,19 @@
+/*
+ * Movimiento.h
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef MOVIMIENTO_H_
+#define MOVIMIENTO_H_
+
+#include <string>
+
+class Movimiento {
+public:
+	Movimiento();
+	virtual ~Movimiento();
+};
+
+#endif /* MOVIMIENTO_H_ */

@@ -1,0 +1,25 @@
+/*
+ * Fichero.h
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FICHERO_H_
+#define FICHERO_H_
+
+#include <string>
+
+class Fichero {
+
+	std::string path;
+
+public:
+	Fichero(std::string path);
+
+
+
+	virtual ~Fichero();
+};
+
+#endif /* FICHERO_H_ */

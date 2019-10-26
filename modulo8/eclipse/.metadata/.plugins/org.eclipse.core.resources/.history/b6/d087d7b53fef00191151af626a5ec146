@@ -1,0 +1,17 @@
+/*
+ * OperacionesIO.h
+ *
+ *  Created on: 15 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef OPERACIONESIO_H_
+#define OPERACIONESIO_H_
+
+class OperacionesIO {
+public:
+	OperacionesIO();
+	virtual ~OperacionesIO();
+};
+
+#endif /* OPERACIONESIO_H_ */

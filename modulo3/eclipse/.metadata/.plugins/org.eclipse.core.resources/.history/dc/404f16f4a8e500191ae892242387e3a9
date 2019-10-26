@@ -1,0 +1,23 @@
+/*
+ * Casilla.h
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CASILLA_H_
+#define CASILLA_H_
+
+namespace std {
+namespace literals {
+
+class Casilla {
+public:
+	Casilla();
+	virtual ~Casilla();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* CASILLA_H_ */

@@ -1,0 +1,59 @@
+/*
+ * FactoriaPrototipos.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FactoriaPrototipos.h"
+#include "Circulo.h"
+#include "Cilindro.h"
+#include "Triangulo.h"
+#include "Esfera.h"
+
+#include <iostream>
+
+
+
+FactoriaPrototipos::FactoriaPrototipos() {
+	this->inicializarPrototipos();
+}
+
+void FactoriaPrototipos::inicializarPrototipos() {
+    /* C++ 20 por el make_shared
+	std::shared_ptr<Figura> cilindro = std::make_shared<Cilindro>(Cilindro());
+	std::shared_ptr<Figura> circulo = std::make_shared<Circulo>(Circulo());
+	std::shared_ptr<Figura> esfera = std::make_shared<Esfera>(Esfera());
+	std::shared_ptr<Figura> triangulo = std::make_shared<Triangulo>(Triangulo());
+    */
+
+	/*
+	this->prototipos[CILINDRO]=std::shared_ptr<Figura>(new Cilindro);
+	this->prototipos[CIRCULO]=std::shared_ptr<Figura>(new Circulo);
+	this->prototipos[ESFERA]=std::shared_ptr<Figura>(new Esfera);
+	this->prototipos[TRIANGULO]=std::shared_ptr<Figura>(new Triangulo);
+	*/
+
+	this->prototipos.insert(std::make_pair(CILINDRO, std::shared_ptr<Cilindro>(new Cilindro)));
+	this->prototipos.insert(std::make_pair(CIRCULO, std::shared_ptr<Circulo>(new Circulo)));
+	this->prototipos.insert(std::make_pair(ESFERA, std::shared_ptr<Esfera>(new Esfera)));
+	this->prototipos.insert(std::make_pair(TRIANGULO, std::shared_ptr<Triangulo>(new Triangulo)));
+
+	this->
+}
+
+std::shared_ptr<Figura> FactoriaPrototipos::getPrototipo(TFiguras figura) {
+	return this->prototipos.at(figura)->clonar();
+}
+
+
+void FactoriaPrototipos::imprimir(){
+	for(auto[k v]: this->prototipos)
+		v->dibujar();
+}
+
+
+FactoriaPrototipos::~FactoriaPrototipos() {
+	// TODO Auto-generated destructor stub
+}
+

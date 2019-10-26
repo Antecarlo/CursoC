@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 7 oct. 2019
+ *      Author: antonio
+ */
+
+#include <vector>
+#include "Punto2D.h"
+
+/*
+ *
+ * Crear dos vectores de puntos y comparar si son iguales, si uno es mas que otro, etc.
+ *
+ */
+
+int main(){
+	std::vector<int> v1= {4,5,6,7,8};
+
+}
+
+

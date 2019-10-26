@@ -1,0 +1,25 @@
+/*
+ * Tablero.h
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TABLERO_H_
+#define TABLERO_H_
+
+#include<vector>
+#include "Casilla.h"
+
+class Tablero {
+
+private:
+	int n;
+	std::vector<std::vector<Casilla>> tablero;
+
+public:
+	Tablero(int n);
+	virtual ~Tablero();
+};
+
+#endif /* TABLERO_H_ */

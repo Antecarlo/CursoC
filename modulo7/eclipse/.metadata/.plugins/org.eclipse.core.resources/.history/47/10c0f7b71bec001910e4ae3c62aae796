@@ -1,0 +1,24 @@
+/*
+ * Cuenta.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Cuenta.h"
+
+Cuenta::Cuenta() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Cuenta::Cuenta(Cliente cliente, double saldo) {
+}
+
+void Cuenta::addMovimiento(Movimiento mov) {
+}
+
+Cuenta::~Cuenta() {
+	// TODO Auto-generated destructor stub
+}
+

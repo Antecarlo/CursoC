@@ -1,0 +1,22 @@
+/*
+ * State.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef STATE_H_
+#define STATE_H_
+
+class State {
+public:
+	State();
+
+	virtual void frenar()=0;
+	virtual void acelerar()=0;
+	virtual void contacto()=0;
+
+	virtual ~State();
+};
+
+#endif /* STATE_H_ */

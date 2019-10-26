@@ -1,0 +1,6 @@
+13:19:25 **** Incremental Build of configuration Debug for project vectores_operadores ****
+make all 
+make: No se hace nada para 'all'.
+
+13:19:26 Build Finished. 0 errors, 0 warnings. (took 670ms)
+

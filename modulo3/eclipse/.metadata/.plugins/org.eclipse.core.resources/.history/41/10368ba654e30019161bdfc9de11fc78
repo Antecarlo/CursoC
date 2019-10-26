@@ -1,0 +1,23 @@
+/*
+ * JefeProyecto.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "JefeProyecto.h"
+
+namespace std {
+namespace literals {
+
+JefeProyecto::JefeProyecto() {
+	// TODO Auto-generated constructor stub
+
+}
+
+JefeProyecto::~JefeProyecto() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

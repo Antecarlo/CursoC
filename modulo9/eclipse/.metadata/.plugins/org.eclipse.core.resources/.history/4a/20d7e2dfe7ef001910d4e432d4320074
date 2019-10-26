@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "SmartPhone.h"
+#include "Tablet.h"
+#include "FactoryApple.h"
+#include "FactorySamsung.h"
+
+#include <iostream>
+#include <string>
+#include <memory>
+
+
+
+int main(int argc, char * argv[]){
+	std::unique_ptr<Factory>= std::make_unique<FactoryApple()>;
+
+}

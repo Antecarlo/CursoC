@@ -1,0 +1,23 @@
+/*
+ * FechaHora.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FechaHora.h"
+
+namespace std {
+namespace literals {
+
+FechaHora::FechaHora() {
+	// TODO Auto-generated constructor stub
+
+}
+
+FechaHora::~FechaHora() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

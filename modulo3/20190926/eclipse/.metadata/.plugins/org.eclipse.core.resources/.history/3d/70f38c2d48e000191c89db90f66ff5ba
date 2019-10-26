@@ -1,0 +1,17 @@
+/*
+ * Hora.h
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef HORA_H_
+#define HORA_H_
+
+class Hora {
+public:
+	Hora();
+	virtual ~Hora();
+};
+
+#endif /* HORA_H_ */

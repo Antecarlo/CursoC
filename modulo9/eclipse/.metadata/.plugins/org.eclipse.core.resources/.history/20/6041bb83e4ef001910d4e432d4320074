@@ -1,0 +1,18 @@
+/*
+ * IPad.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "IPad.h"
+
+IPad::IPad() {
+	// TODO Auto-generated constructor stub
+
+}
+
+IPad::~IPad() {
+	// TODO Auto-generated destructor stub
+}
+

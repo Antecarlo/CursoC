@@ -1,0 +1,49 @@
+/*
+ * Empleado.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef EMPLEADO_H_
+#define EMPLEADO_H_
+
+#include "Persona.h"
+#include<string>
+
+
+class Empleado: public Persona {//El modificador public hay que ponerlo delante de cada clase
+
+	double sueldo;
+	std::string empresa;
+
+public:
+	Empleado();
+
+
+
+	Empleado(std::string nombre, std::string apellidos, float peso, float altura, double sueldo, std::string empresa);
+
+		void dormir();
+
+
+	virtual ~Empleado();
+
+	const std::string& getEmpresa() const {
+		return empresa;
+	}
+
+	void setEmpresa(const std::string& empresa) {
+		this->empresa = empresa;
+	}
+
+	double getSueldo() const {
+		return sueldo;
+	}
+
+	void setSueldo(double sueldo) {
+		this->sueldo = sueldo;
+	}
+};
+
+#endif /* EMPLEADO_H_ */

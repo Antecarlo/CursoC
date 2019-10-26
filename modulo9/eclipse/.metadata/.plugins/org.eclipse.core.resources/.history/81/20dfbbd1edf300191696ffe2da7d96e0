@@ -1,0 +1,21 @@
+/*
+ * Servidor.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Servidor.h"
+
+Servidor::Servidor() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Servidor::~Servidor() {
+	// TODO Auto-generated destructor stub
+}
+
+void Servidor::descargarURL(std::string url) {
+	std::cout << "La URL se esta descargando..." << std::endl;
+}

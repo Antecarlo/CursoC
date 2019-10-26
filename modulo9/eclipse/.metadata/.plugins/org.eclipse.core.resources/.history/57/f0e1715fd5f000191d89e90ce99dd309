@@ -1,0 +1,21 @@
+/*
+ * Caracter.h
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CARACTER_H_
+#define CARACTER_H_
+
+class Caracter {
+
+	char letra;
+	int ptr_estilo;
+
+public:
+	Caracter();
+	virtual ~Caracter();
+};
+
+#endif /* CARACTER_H_ */

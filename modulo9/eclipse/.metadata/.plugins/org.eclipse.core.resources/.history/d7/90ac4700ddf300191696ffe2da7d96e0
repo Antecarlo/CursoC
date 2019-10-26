@@ -1,0 +1,23 @@
+/*
+ * ExpresionBinaria.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EXPRESIONBINARIA_H_
+#define EXPRESIONBINARIA_H_
+
+#include "Expresion.h"
+
+class ExpresionBinaria: public Expresion {
+
+	double numero1;
+	double numero2;
+
+public:
+	ExpresionBinaria();
+	virtual ~ExpresionBinaria();
+};
+
+#endif /* EXPRESIONBINARIA_H_ */

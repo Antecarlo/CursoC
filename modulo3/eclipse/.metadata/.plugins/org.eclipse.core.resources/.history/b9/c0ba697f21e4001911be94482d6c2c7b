@@ -1,0 +1,25 @@
+/*
+ * FechaHora.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FechaHora.h"
+
+FechaHora::FechaHora() {
+	// TODO Auto-generated constructor stub
+
+}
+
+FechaHora::FechaHora(int horas, int minutos, int segundos, int d, int M,
+		int y): Hora(horas,minutos,segundos),Fecha(d,M,y) {
+}
+
+void FechaHora::imprimir() {
+}
+
+FechaHora::~FechaHora() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,19 @@
+/*
+ * Tarifa.h
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TARIFA_H_
+#define TARIFA_H_
+
+
+class Tarifa {
+public:
+	Tarifa();
+	virtual ~Tarifa();
+};
+
+
+#endif /* TARIFA_H_ */

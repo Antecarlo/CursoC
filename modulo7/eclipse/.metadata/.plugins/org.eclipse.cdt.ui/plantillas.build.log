@@ -1,0 +1,6 @@
+10:51:47 **** Incremental Build of configuration Debug for project plantillas ****
+make all 
+make: No se hace nada para 'all'.
+
+10:51:48 Build Finished. 0 errors, 0 warnings. (took 542ms)
+

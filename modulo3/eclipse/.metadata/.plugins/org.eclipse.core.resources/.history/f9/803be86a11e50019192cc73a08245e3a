@@ -1,0 +1,53 @@
+/*
+ * Coordenada.cpp
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Coordenada.h"
+#include <ctime>
+
+Coordenada::Coordenada(int fila, int columna): fil(fila),col(columna) {
+}
+
+Coordenada Coordenada::getAleatorio(int nMax) {
+	Coordenada coor;
+	coor.fil=std::rand() % nMax;
+	coor.col=std::rand() %nMax;
+
+	return coor;
+}
+
+std::vector <Coordenada> Coordenada::getCoordenadasAleatorias(int numCoordenadas,int nMax){
+	Coordenada aux;
+	aux = this->getAleatorio(nMax);
+
+	//auto resultado = std::find(std::begin(vector),std::end(vector),numeroabuscar);
+	//Implementar el ==
+	/*
+	if (resultado != std::end(vector)){
+		std::cout << "v contiene: "<< numeroabuscar << '\n';
+	}else{
+		std::cout << "v no contiene: "<< numeroabuscar << '\n';
+	}
+	*/
+
+
+}
+
+bool Coordenada::operator ==(const Coordenada& c) {
+	return this->fil == c.fil && this->col == c.col;
+}
+
+std::istream & operator >> (std::istream & is, Coordenada & c){
+	return is >> c.fil >> c.col;
+}
+
+std::ostream & operator << (std::ostream & os, const Coordenada & c){
+	return os << "(" << c.fil << ", " <<c.col<<")";
+}
+
+Coordenada::~Coordenada() {
+	// TODO Auto-generated destructor stub
+}

@@ -1,0 +1,6 @@
+10:16:37 **** Incremental Build of configuration Debug for project matrices ****
+make all 
+make: No se hace nada para 'all'.
+
+10:16:38 Build Finished. 0 errors, 0 warnings. (took 647ms)
+

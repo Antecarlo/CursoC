@@ -1,0 +1,18 @@
+/*
+ * Fichero.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Fichero.h"
+
+Fichero::Fichero() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Fichero::~Fichero() {
+	// TODO Auto-generated destructor stub
+}
+

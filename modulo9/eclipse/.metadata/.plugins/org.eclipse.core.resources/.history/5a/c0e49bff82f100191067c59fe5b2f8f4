@@ -1,0 +1,17 @@
+/*
+ * LeerEscribir.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef LEERESCRIBIR_H_
+#define LEERESCRIBIR_H_
+
+class LeerEscribir {
+public:
+	LeerEscribir();
+	virtual ~LeerEscribir();
+};
+
+#endif /* LEERESCRIBIR_H_ */

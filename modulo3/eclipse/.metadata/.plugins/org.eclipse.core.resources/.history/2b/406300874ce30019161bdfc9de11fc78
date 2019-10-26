@@ -1,0 +1,25 @@
+/*
+ * Empleado.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef EMPLEADO_H_
+#define EMPLEADO_H_
+
+#include "Persona.h"
+
+namespace std {
+namespace literals {
+
+class Empleado: public Persona {
+public:
+	Empleado();
+	virtual ~Empleado();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* EMPLEADO_H_ */

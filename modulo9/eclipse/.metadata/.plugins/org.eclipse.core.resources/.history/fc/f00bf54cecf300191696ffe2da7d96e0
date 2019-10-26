@@ -1,0 +1,17 @@
+/*
+ * Proxy.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef PROXY_H_
+#define PROXY_H_
+
+class Proxy {
+public:
+	Proxy();
+	virtual ~Proxy();
+};
+
+#endif /* PROXY_H_ */

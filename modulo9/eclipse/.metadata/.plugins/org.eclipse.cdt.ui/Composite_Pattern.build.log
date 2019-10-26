@@ -1,0 +1,6 @@
+11:49:27 **** Incremental Build of configuration Debug for project Composite_Pattern ****
+make all 
+make: No se hace nada para 'all'.
+
+11:49:27 Build Finished. 0 errors, 0 warnings. (took 528ms)
+

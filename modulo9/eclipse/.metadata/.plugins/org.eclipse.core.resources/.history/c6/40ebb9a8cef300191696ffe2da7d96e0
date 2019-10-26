@@ -1,0 +1,26 @@
+/*
+ * Parado.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Parado.h"
+
+
+Parado::Parado(){
+}
+
+void Parado::frenar(Coche &coche) {
+}
+
+void Parado::acelerar(Coche &coche) {
+}
+
+void Parado::contacto(Coche &coche) {
+}
+
+Parado::~Parado() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,87 @@
+/*
+ * pruebaIdioma.cpp
+ *
+ *  Created on: 15 oct. 2019
+ *      Author: antonio
+ */
+
+#include "pruebaIdioma.h"
+
+pruebaIdioma::pruebaIdioma() {
+	// TODO Auto-generated constructor stub
+
+}
+
+pruebaIdioma::~pruebaIdioma() {
+	// TODO Auto-generated destructor stub
+}
+
+
+
+#include "util.h"
+
+#include <fstream>
+#include <iostream>
+#include <stdexcept>
+
+#include "string.h"
+
+pruebaIdioma::pruebaIdioma(std::string path): path(path) {
+	this->load();
+}
+
+bool pruebaIdioma::load() {
+	std::ifstream fich(this->path.c_str(),std::ios::in); //abrimos el fichero
+
+	if(!fich)
+		throw std::invalid_argument("The file "+this->path+" does not exist");
+
+	std::string linea;
+	char cad[1024];
+
+	if(!fich){
+		std::cout << "Error, no se encuentra el fichero" << std::endl;
+		std::exit(1);
+	}
+
+	while (fich.getline(cad,1024)){ //leemos lineas del fichero
+		linea=std::string(cad);
+		this->configuracion.insert(util::getColumnas(linea,'='));
+	}
+	return true;
+}
+
+void pruebaIdioma::save(std::string path) {
+	std::string pathOut;
+
+	pathOut=(path=="")? this->path : path;
+
+	std::ofstream fich(pathOut,std::ios::out); //Flujo
+
+	if(fich.is_open()){
+
+		for(auto p: this->configuracion)
+			fich <<p.first << '=' << p.second << "\n";
+
+		fich.close();
+	}else{
+		throw std::invalid_argument("The file "+this->path+" is already in use");
+	}
+}
+
+std::string pruebaIdioma::getKey(std::string key) {
+	return this->configuracion.at(key);
+}
+
+void pruebaIdioma::setKey(std::string key, std::string value) {
+	this->configuracion[key]=value;
+}
+
+void pruebaIdioma::imprimirMapa() {
+	for (auto p: this->configuracion)
+		std::cout << p.first<< " = "<<p.second << "\n";
+}
+
+pruebaIdioma::~pruebaIdioma() {
+	// TODO Auto-generated destructor stub
+}

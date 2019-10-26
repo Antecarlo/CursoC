@@ -1,0 +1,30 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ListDir.h"
+
+#include <vector>
+#include <iostream>
+#include <string>
+
+void pruebaListDir(){
+	std::vector<std::string> ficheros;
+
+	try{
+		ficheros=ListDir::getCSV("./CSV");
+		for(auto f:ficheros)
+			std::cout << f<< std::endl;
+	}catch(std::invalid_argument & e){
+		std::cout << e.what() << std::endl;
+	}
+}
+
+int main(){
+	pruebaListDir();
+}
+
+

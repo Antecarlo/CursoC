@@ -1,0 +1,36 @@
+/*
+ * Context.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Contexto.h"
+#include <chrono>
+
+Contexto::Contexto(int* numeros, int size): numeros(numeros),size(size) {
+}
+
+void Contexto::testEstrategias() {
+
+	//Obtener copia del array de numeros
+}
+
+void Contexto::ordenar(Estrategia * estrategia){
+	// Tomar tiempo
+
+	//Ordenar con la estrategia
+
+	//Tomar tiempo
+
+	//Imprimir tiempo de ejecucion
+
+}
+
+void Contexto::imprimir() {
+}
+
+Contexto::~Contexto() {
+	// TODO Auto-generated destructor stub
+}
+

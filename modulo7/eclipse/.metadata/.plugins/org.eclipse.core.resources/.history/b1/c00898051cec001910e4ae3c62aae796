@@ -1,0 +1,24 @@
+/*
+ * Cuenta.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Cuenta.h"
+
+
+Cuenta::Cuenta(Cliente cliente, double saldo): cliente(cliente),saldo(saldo) {
+}
+
+void Cuenta::addMovimiento(Movimiento mov) {
+	this->movimientos.push_back(mov);
+}
+
+void Cuenta::imprimir() {
+}
+
+Cuenta::~Cuenta() {
+	// TODO Auto-generated destructor stub
+}
+

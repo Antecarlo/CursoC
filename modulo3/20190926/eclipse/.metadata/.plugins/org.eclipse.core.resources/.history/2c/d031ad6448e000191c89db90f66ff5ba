@@ -1,0 +1,21 @@
+/*
+ * Hora.cpp
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Hora.h"
+
+Hora::Hora() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Hora::Hora(int horas, int minutos, int segundos) {
+}
+
+Hora::~Hora() {
+	// TODO Auto-generated destructor stub
+}
+

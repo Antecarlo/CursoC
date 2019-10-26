@@ -1,0 +1,21 @@
+/*
+ * Evento.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EVENTO_H_
+#define EVENTO_H_
+#include "Fecha.h"
+
+
+class Evento : public Fecha {
+
+public:
+	Evento();
+	virtual ~Evento();
+};
+
+
+#endif /* EVENTO_H_ */

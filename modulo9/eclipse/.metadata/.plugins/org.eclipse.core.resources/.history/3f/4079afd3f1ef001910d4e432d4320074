@@ -1,0 +1,21 @@
+/*
+ * EstrategiaBurbuja.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "EstrategiaBurbuja.h"
+
+EstrategiaBurbuja::EstrategiaBurbuja() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void EstrategiaBurbuja::ordenar(int* array, int size) {
+}
+
+EstrategiaBurbuja::~EstrategiaBurbuja() {
+	// TODO Auto-generated destructor stub
+}
+

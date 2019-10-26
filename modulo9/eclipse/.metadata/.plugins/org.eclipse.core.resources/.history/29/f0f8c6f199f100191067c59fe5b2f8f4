@@ -1,0 +1,17 @@
+/*
+ * Coche.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef COCHE_H_
+#define COCHE_H_
+
+class Coche {
+public:
+	Coche();
+	virtual ~Coche();
+};
+
+#endif /* COCHE_H_ */

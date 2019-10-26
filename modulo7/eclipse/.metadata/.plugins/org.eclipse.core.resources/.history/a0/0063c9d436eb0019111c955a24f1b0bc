@@ -1,0 +1,78 @@
+/*
+
+MAIN
+
+*/
+
+#include <iostream>
+#include <string>
+
+#include "number.h"
+#include "Hora.h"
+#include "Vector.h"
+
+void pruebaTemplate1(){
+	Number<int>num(8);
+	Number<int>num2(18);
+
+	Number<int> r=num+num2;
+	std::cout << r.get() <<std::endl;
+
+	/*
+	Number<std::string>s(std::string("8"));
+	Number<std::string>s2(std::string("18"));
+	Number<std::string> r=s+s2;
+	*/
+
+	std::cout << num.get() << std::endl;
+	num.set(88);
+	std::cout << num.get() << std::endl;
+
+
+	//// HORAS
+
+	//Number<Hora>hora(14,26,8); //Asi construimos un objeto Number
+
+	Number<Hora>hora1(Hora(14,26,8));
+	std::cout << "Hora 1: "<< hora1.get() << std::endl;
+	Number<Hora>hora2(Hora(22,40,55));
+	std::cout << "Hora 2: "<< hora2.get() << std::endl;
+
+	Number<Hora> hora3 = hora1+hora2;
+	std::cout << "Hora 3: "<< hora3.get() << std::endl;
+
+	std::cout<< "Usando el metodo print: "<< std::endl;
+	print(hora3);
+	print(num);
+
+	std::cout << "\n";
+
+	std::cout<< "Usando el operador del template: "<< std::endl;
+	std::cout << num << std::endl;
+	std::cout << hora3<< std::endl;
+}
+
+void pruebaTemplate2(){
+	Vector<int> vector1(15);
+	vector1.add(5);
+	vector1.add(26);
+	vector1.add(7);
+	vector1.add(80);
+
+	Vector<std::string> vector2;
+	vector2.add("Primer string");
+	vector2.add("Segundo string");
+	vector2.add("Tercer string");
+	vector2.add("Cuarto string");
+
+}
+
+
+int main(){
+
+	//pruebaTemplate1();
+	pruebaTemplate2();
+
+
+
+}

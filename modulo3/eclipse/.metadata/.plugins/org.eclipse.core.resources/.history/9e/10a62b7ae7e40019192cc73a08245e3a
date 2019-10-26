@@ -1,0 +1,27 @@
+/*
+ * Factura.cpp
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Factura.h"
+
+
+Factura::Factura() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Factura::imprimir() {
+}
+
+double Factura::calcular() {
+}
+
+void Factura::addServicio(std::unique_ptr<Evento> default_delete) {
+}
+
+Factura::~Factura() {
+	// TODO Auto-generated destructor stub
+}

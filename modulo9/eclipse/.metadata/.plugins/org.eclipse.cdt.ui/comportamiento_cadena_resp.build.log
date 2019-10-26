@@ -1,0 +1,38 @@
+14:09:46 **** Incremental Build of configuration Debug for project comportamiento_cadena_resp ****
+make all 
+Building file: ../ManejadorSMS.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ManejadorSMS.d" -MT"ManejadorSMS.o" -o "ManejadorSMS.o" "../ManejadorSMS.cpp"
+../ManejadorSMS.cpp: In member function ‘virtual void ManejadorSMS::manejarPeticion(Peticion)’:
+../ManejadorSMS.cpp:21:9: warning: statement has no effect [-Wunused-value]
+   this->mail;
+   ~~~~~~^~~~
+Finished building: ../ManejadorSMS.cpp
+ 
+Building file: ../Peticion.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Peticion.d" -MT"Peticion.o" -o "Peticion.o" "../Peticion.cpp"
+Finished building: ../Peticion.cpp
+ 
+Building file: ../Sucesor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sucesor.d" -MT"Sucesor.o" -o "Sucesor.o" "../Sucesor.cpp"
+Finished building: ../Sucesor.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: comportamiento_cadena_resp
+Invoking: GCC C++ Linker
+g++  -o "comportamiento_cadena_resp"  ./ManejadorSMS.o ./Peticion.o ./Sucesor.o ./main.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: En la función `_start':
+(.text+0x20): referencia a `main' sin definir
+makefile:44: recipe for target 'comportamiento_cadena_resp' failed
+collect2: error: ld returned 1 exit status
+make: *** [comportamiento_cadena_resp] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:09:51 Build Failed. 3 errors, 1 warnings. (took 4s.237ms)
+

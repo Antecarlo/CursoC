@@ -1,0 +1,18 @@
+/*
+ * FactoryApple.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FactoryApple.h"
+
+FactoryApple::FactoryApple() {
+	// TODO Auto-generated constructor stub
+
+}
+
+FactoryApple::~FactoryApple() {
+	// TODO Auto-generated destructor stub
+}
+

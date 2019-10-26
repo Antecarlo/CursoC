@@ -1,0 +1,18 @@
+/*
+ * FactoriaFlyWeight.cpp
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FactoriaFlyWeight.h"
+
+FactoriaFlyWeight::FactoriaFlyWeight() {
+	// TODO Auto-generated constructor stub
+
+}
+
+FactoriaFlyWeight::~FactoriaFlyWeight() {
+	// TODO Auto-generated destructor stub
+}
+

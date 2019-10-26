@@ -1,0 +1,17 @@
+/*
+ * FormateadorCsvHtml5.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FORMATEADORCSVHTML5_H_
+#define FORMATEADORCSVHTML5_H_
+
+class FormateadorCsvHtml5 {
+public:
+	FormateadorCsvHtml5();
+	virtual ~FormateadorCsvHtml5();
+};
+
+#endif /* FORMATEADORCSVHTML5_H_ */

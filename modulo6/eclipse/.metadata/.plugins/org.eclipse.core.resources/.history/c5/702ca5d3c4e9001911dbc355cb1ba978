@@ -1,0 +1,17 @@
+/*
+ * Palabra.h
+ *
+ *  Created on: 8 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef PALABRA_H_
+#define PALABRA_H_
+
+class Palabra {
+public:
+	Palabra();
+	virtual ~Palabra();
+};
+
+#endif /* PALABRA_H_ */

@@ -1,0 +1,27 @@
+/*
+ * Context.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Contexto.h"
+
+Contexto::Contexto() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Contexto::Contexto(int* numeros, int size) {
+}
+
+void Contexto::testEstrategias() {
+}
+
+void Contexto::imprimir() {
+}
+
+Contexto::~Contexto() {
+	// TODO Auto-generated destructor stub
+}
+

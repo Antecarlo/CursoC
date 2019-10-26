@@ -1,0 +1,20 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Operaciones.h"
+#include "Proxy.h"
+#include "Servidor.h"
+
+int main(){
+
+	std::string url = "http://www.instagram.com";
+	Proxy proxy;
+	proxy.descargarURL(url);
+
+}
+
+

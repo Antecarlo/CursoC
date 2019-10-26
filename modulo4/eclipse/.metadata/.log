@@ -1,0 +1,23 @@
+!SESSION 2019-10-04 10:21:10.085 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data /home/antonio/CursoCPP/modulo4/eclipse -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-04 10:21:23.849
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-10-04 12:43:44.456 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data /home/antonio/CursoCPP/modulo4/eclipse -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-04 12:44:02.272
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-10-04 12:46:16.446
+!MESSAGE Indexed 'BuscaminasException' (6 sources, 198 headers) in 72,8 sec: 18.778 declarations; 30.873 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)

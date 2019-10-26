@@ -1,0 +1,22 @@
+/*
+ * Jugador.h
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef JUGADOR_H_
+#define JUGADOR_H_
+
+#include<string>
+
+class Jugador {
+
+	std::string alias;
+
+public:
+	Jugador();
+	virtual ~Jugador();
+};
+
+#endif /* JUGADOR_H_ */

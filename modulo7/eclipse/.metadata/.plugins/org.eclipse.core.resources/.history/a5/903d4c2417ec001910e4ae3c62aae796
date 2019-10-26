@@ -1,0 +1,17 @@
+/*
+ * Banco.h
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef BANCO_H_
+#define BANCO_H_
+
+class Banco {
+public:
+	Banco();
+	virtual ~Banco();
+};
+
+#endif /* BANCO_H_ */

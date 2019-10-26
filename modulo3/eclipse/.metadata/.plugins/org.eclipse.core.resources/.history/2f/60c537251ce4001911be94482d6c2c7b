@@ -1,0 +1,44 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include<iostream>
+#include<memory>
+
+#include"Figura.h"
+#include"Figura2D.h"
+#include"Figura3D.h"
+#include "Circulo.h"
+
+void test_error_abstract(){
+	//Figura f; ERROR
+	//Figura *f;
+	std::unique_ptr<Figura>ptr; //Un smart pointer ok!
+
+	//NO SE PUEDEN INSTANCIAR DINAMICAMENTE OBJETOS DE CLASES ABSTRACTAS!
+	//f=new Figura;
+	//ptr=std::make_unique<Figura>("f1","red");
+}
+
+int main(){
+	test_error_abstract();
+
+	//Definir array de sp a Figura;
+	std::unique_ptr<std::unique_ptr<Figura> []> figuras;
+
+	//Crear array de 4 figuras
+	figuras=std::make_unique<std::unique_ptr<Figura>[]>(4);
+
+	//Circulo circulo("Circulo1","Blue",5.0);
+
+	auto circulo = std::make_unique<Circulo>("Circulo1","Blue",5.0);
+
+}
+
+
+
+
+

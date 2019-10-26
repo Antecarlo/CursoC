@@ -1,0 +1,18 @@
+/*
+ * Factura.cpp
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Factura.h"
+
+
+Factura::Factura() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Factura::~Factura() {
+	// TODO Auto-generated destructor stub
+}

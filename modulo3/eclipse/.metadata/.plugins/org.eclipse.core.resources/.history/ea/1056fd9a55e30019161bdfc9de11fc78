@@ -1,0 +1,32 @@
+/*
+ * Programador.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Programador.h"
+#include "Empleado.h"
+#include <iostream>
+#include <string>
+
+Programador::Programador() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Programador::Programador(std::string nombre, std::string apellidos, float peso,
+		float altura, double sueldo, std::string empresa,
+		std::string lenguajes) : Empleado(nombre,apellidos, peso, altura,sueldo,empresa) {
+
+	this->lenguajes= lenguajes;
+}
+
+std::ostream & operator << (std::ostream & os, const Programador & p){
+
+}
+
+Programador::~Programador() {
+	// TODO Auto-generated destructor stub
+}
+

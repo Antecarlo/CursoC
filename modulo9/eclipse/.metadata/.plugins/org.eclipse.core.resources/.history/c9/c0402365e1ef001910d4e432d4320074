@@ -1,0 +1,17 @@
+/*
+ * SmartPhone.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef SMARTPHONE_H_
+#define SMARTPHONE_H_
+
+class SmartPhone {
+public:
+	SmartPhone();
+	virtual ~SmartPhone();
+};
+
+#endif /* SMARTPHONE_H_ */

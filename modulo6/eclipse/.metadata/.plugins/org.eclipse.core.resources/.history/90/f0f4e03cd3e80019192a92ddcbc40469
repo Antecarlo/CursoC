@@ -1,0 +1,17 @@
+/*
+ * AgendaException.h
+ *
+ *  Created on: 7 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef AGENDAEXCEPTION_H_
+#define AGENDAEXCEPTION_H_
+
+class AgendaException {
+public:
+	AgendaException();
+	virtual ~AgendaException();
+};
+
+#endif /* AGENDAEXCEPTION_H_ */

@@ -1,0 +1,18 @@
+/*
+ * ServidorDedicado.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ServidorDedicado.h"
+
+ServidorDedicado::ServidorDedicado() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ServidorDedicado::~ServidorDedicado() {
+	// TODO Auto-generated destructor stub
+}
+

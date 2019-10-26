@@ -1,0 +1,20 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include <iostream>
+#include <chrono>
+#include <thread>
+
+int main() {
+
+	//Generar numeros aleatorios
+	int [10000000] aleatorios;
+
+}
+
+
+

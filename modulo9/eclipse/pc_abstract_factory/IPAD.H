@@ -1,0 +1,22 @@
+/*
+ * IPad.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef IPAD_H_
+#define IPAD_H_
+
+#include "Tablet.h"
+
+class IPad : public Tablet{
+public:
+	IPad(int capacidad);
+
+	void internet();
+
+	virtual ~IPad();
+};
+
+#endif /* IPAD_H_ */

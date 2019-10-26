@@ -1,0 +1,25 @@
+/*
+ * CallI.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CALLI_H_
+#define CALLI_H_
+
+#include "Call.h"
+
+namespace std {
+namespace literals {
+
+class CallI: public Call {
+public:
+	CallI();
+	virtual ~CallI();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* CALLI_H_ */

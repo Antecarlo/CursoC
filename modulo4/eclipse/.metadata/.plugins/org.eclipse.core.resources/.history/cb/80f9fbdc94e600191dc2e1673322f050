@@ -1,0 +1,30 @@
+/*
+ * Buscaminas.h
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef BUSCAMINAS_H_
+#define BUSCAMINAS_H_
+
+#include "Tablero.h"
+#include "Jugador.h"
+
+class Buscaminas {
+
+	Tablero tablero;
+	Jugador jugador;
+
+public:
+	Buscaminas();
+	Buscaminas(int n, int numBombas,std::string nombre)
+
+	void excepcionCoordenadas();
+	void jugar();
+
+
+	virtual ~Buscaminas();
+};
+
+#endif /* BUSCAMINAS_H_ */

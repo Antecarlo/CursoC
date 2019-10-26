@@ -1,0 +1,17 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "SmartPhone.h"
+#include "Tablet.h"
+#include "FactoryApple.h"
+#include "FactorySamsung.h"
+
+
+
+int main(){
+
+}

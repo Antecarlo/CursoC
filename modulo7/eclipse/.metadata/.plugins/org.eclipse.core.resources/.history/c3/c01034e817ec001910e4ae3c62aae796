@@ -1,0 +1,17 @@
+/*
+ * Cliente.h
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CLIENTE_H_
+#define CLIENTE_H_
+
+class Cliente {
+public:
+	Cliente();
+	virtual ~Cliente();
+};
+
+#endif /* CLIENTE_H_ */

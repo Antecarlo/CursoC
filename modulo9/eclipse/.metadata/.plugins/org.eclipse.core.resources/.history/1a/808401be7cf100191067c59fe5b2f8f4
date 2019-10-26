@@ -1,0 +1,21 @@
+/*
+ * ListDir.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ListDir.h"
+
+ListDir::ListDir() {
+	// TODO Auto-generated constructor stub
+
+}
+
+std::vector<std::string> ListDir::getCSV(std::string origen) {
+}
+
+ListDir::~ListDir() {
+	// TODO Auto-generated destructor stub
+}
+

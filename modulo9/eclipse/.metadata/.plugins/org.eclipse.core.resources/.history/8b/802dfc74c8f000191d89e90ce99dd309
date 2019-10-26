@@ -1,0 +1,62 @@
+/*
+ * Estilo.h
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ESTILO_H_
+#define ESTILO_H_
+
+#include <string>
+#include "Tipos.h"
+
+class Estilo {
+
+	bool negrita;
+	std::string tipoletra;
+	int size;
+	std::string color;
+
+public:
+	Estilo(bool negrita=false,TLetra tletra=CALIBRI,TColor color =BLACK, int size=12);
+
+	int getCodigo() const;
+	void imprimir() const;
+
+	virtual ~Estilo();
+
+	const std::string& getColor() const {
+		return color;
+	}
+
+	void setColor(const std::string& color) {
+		this->color = color;
+	}
+
+	bool isNegrita() const {
+		return negrita;
+	}
+
+	void setNegrita(bool negrita) {
+		this->negrita = negrita;
+	}
+
+	int getSize() const {
+		return size;
+	}
+
+	void size(int size) {
+		this->size = size;
+	}
+
+	const std::string& getTipoletra() const {
+		return tipoletra;
+	}
+
+	void setTipoletra(const std::string& tipoletra) {
+		this->tipoletra = tipoletra;
+	}
+};
+
+#endif /* ESTILO_H_ */

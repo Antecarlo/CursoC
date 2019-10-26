@@ -1,0 +1,23 @@
+/*
+ * Fecha.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FECHA_H_
+#define FECHA_H_
+
+namespace std {
+namespace literals {
+
+class Fecha {
+public:
+	Fecha();
+	virtual ~Fecha();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* FECHA_H_ */

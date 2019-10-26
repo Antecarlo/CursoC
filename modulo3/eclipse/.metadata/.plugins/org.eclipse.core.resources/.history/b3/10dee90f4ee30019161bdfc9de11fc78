@@ -1,0 +1,21 @@
+/*
+ * Empleado.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Empleado.h"
+
+Empleado::Empleado() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Empleado::Empleado(std::string nombre, std::string apellidos, float peso,
+		float altura, double sueldo, std::string empresa) {
+}
+
+Empleado::~Empleado() {
+	// TODO Auto-generated destructor stub
+}

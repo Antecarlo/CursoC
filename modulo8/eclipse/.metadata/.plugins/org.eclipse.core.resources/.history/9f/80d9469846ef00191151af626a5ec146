@@ -1,0 +1,26 @@
+/*
+ * Cajero.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Cajero.h"
+#include <iostream>
+
+Cajero::Cajero() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Cajero::leerTarjeta() {
+	std::cout << "Por favor, introduzca el numero de tarjeta y el pin: " << std::endl;
+	std::cout << "Numero: " << std::endl;
+	std::cout << "Pin: " << std::endl;
+
+}
+
+Cajero::~Cajero() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,18 @@
+/*
+ * Circulo.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Circulo.h"
+
+Circulo::Circulo() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Circulo::~Circulo() {
+	// TODO Auto-generated destructor stub
+}
+

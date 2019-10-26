@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;plantillas2&apos;&#x0A;- Original project: &apos;plantillas&apos;&#x0A;- Destination element: &apos;plantillas2&apos;&#x0A;- Original elements:&#x0A;     number.cpp&#x0A;     number.h&#x0A;     main.cpp" description="Copy files" element1="number.cpp" element2="number.h" element3="main.cpp" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1570690425371" target="/plantillas2" units="0" version="1.0"/>
+</session>

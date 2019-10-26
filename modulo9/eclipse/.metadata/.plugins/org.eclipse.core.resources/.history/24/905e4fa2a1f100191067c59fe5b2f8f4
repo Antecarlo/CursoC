@@ -1,0 +1,18 @@
+/*
+ * EnMarcha.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "EnMarcha.h"
+
+EnMarcha::EnMarcha() {
+	// TODO Auto-generated constructor stub
+
+}
+
+EnMarcha::~EnMarcha() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,20 @@
+/*
+ * Call.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CALL_H_
+#define CALL_H_
+
+#include "Evento.h"
+
+
+class Call: public Evento {
+public:
+	Call();
+	virtual ~Call();
+};
+
+#endif /* CALL_H_ */

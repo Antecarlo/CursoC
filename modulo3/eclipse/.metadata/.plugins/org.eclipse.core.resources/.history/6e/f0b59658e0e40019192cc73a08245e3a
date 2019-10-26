@@ -1,0 +1,21 @@
+/*
+ * CallI.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "CallI.h"
+
+CallI::CallI(){
+this->roaming=0;
+}
+
+CallI::CallI(long numD,double roaming, double importe, Fecha fecha, Hora hora, Hora horaFin):Call(numD,importe,fecha,hora,horaFin){
+	this->roaming=roaming;
+}
+
+CallI::~CallI() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,17 @@
+/*
+ * Agenda.h
+ *
+ *  Created on: 4 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef AGENDA_H_
+#define AGENDA_H_
+
+class Agenda {
+public:
+	Agenda();
+	virtual ~Agenda();
+};
+
+#endif /* AGENDA_H_ */

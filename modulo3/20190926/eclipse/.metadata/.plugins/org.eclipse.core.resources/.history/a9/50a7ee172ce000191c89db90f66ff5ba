@@ -1,0 +1,27 @@
+/*
+ * Numero.cpp
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Numero.h"
+
+Numero::Numero() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Numero::Numero(int int1) {
+}
+
+bool Numero::esPar() {
+}
+
+bool Numero::esImpar() {
+}
+
+Numero::~Numero() {
+	// TODO Auto-generated destructor stub
+}
+

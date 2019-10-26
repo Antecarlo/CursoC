@@ -1,0 +1,104 @@
+/*
+ * Agenda.cpp
+ *
+ *  Created on: 4 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Agenda.h"
+#include "AgendaException.h"
+
+#define CONTADOR 0
+
+Agenda::Agenda() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Agenda::listar(){
+	std::map<Fecha,std::map<Hora,std::string>>::iterator it;
+
+	std::cout << "AGENDA COMPLETA" << std::endl;
+	for (it=eventos.begin();it !=eventos.end(); it++){
+		this->listar(it->first);
+	}
+}
+
+void Agenda::listar(Fecha fecha){
+	std::map<Hora,std::string> horas;
+	std::map<Hora,std::string>::iterator it;
+
+	// Recuperar los eventos de una fecha:
+	try{
+		horas = this->eventos.at(fecha);
+		std::cout << "FECHA: " << fecha << std::endl;
+
+		for(it=horas.begin();it!=horas.end();it++){
+			std::cout << "HORA: " << it->first << " -> " << it->second <<std::endl;
+		}
+	}catch(std::out_of_range & e){
+		throw AgendaException("No hay eventos para la fecha "+fecha.toString());
+	}
+}
+
+void Agenda::addEvento(Fecha fecha, Hora hora, std::string evento) {
+	//std::map<Hora,std::string> aux = {{hora,evento}};
+	this->eventos[fecha][hora]=evento;
+	//this->eventos.at(fecha).insert(std::pair<Hora,std::string>(hora,evento)); DA ERROR  out_of_range
+}
+
+std::string Agenda::getEvento(Fecha f, Hora h){
+	//Utilizar find para localizar la fecha y hora
+	auto it = this->eventos.find(f);
+	if(it==eventos.end())
+		throw AgendaException("No hay eventos para la fecha "+f.toString());
+	auto it2= this->eventos.at(f).find(h);
+	if(it2 == this->eventos.at(f).end())
+		throw AgendaException("No hay eventos para la hora "+h.toString()+" en la fecha: "+f.toString());
+	return it2->second;
+}
+
+//OJO EL METODO ERASE NO LANZA EXCEPTION
+/*
+bool Agenda::borrar(Fecha f) {
+
+	try{
+		this->eventos.erase(f);
+		return true;
+	}catch(std::out_of_range & e){
+		throw AgendaException ("La fecha "+f.toString()+" no existe");
+	}
+
+}
+*/
+
+bool Agenda::borrar(Fecha f) {
+	auto it = this->eventos.find(f);
+
+	if(it==eventos.end())
+		throw AgendaException("La fecha "+f.toString()+" no existe");
+	else{
+		this->eventos.erase(f);
+		return true;
+	}
+}
+
+bool Agenda::borrar(Fecha f,Hora h) {
+	auto it = this->eventos.find(f);
+
+	if(it==eventos.end())
+		throw AgendaException("La fecha "+f.toString()+" no existe");
+	else{
+		auto it2= this->eventos.at(f).find(h);
+		if(it2 == this->eventos.at(f).end())
+			throw AgendaException("No hay eventos para la hora "+h.toString()+" en la fecha: "+f.toString());
+		else{
+			this->eventos.at(f).erase(h);
+			return true;
+		}
+	}
+}
+
+Agenda::~Agenda() {
+	// TODO Auto-generated destructor stub
+}

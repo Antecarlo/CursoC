@@ -1,0 +1,29 @@
+/*
+ * Apagado.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Apagado.h"
+#include <iostream>
+
+Apagado::Apagado() {
+
+}
+
+Apagado::~Apagado() {
+	// TODO Auto-generated destructor stub
+}
+
+void Apagado::frenar(Coche & coche) {
+	std::cout << "El estado se mantiene" << std::endl;
+}
+
+void Apagado::acelerar(Coche & coche) {
+	std::cout << "El estado se mantiene" << std::endl;
+}
+
+void Apagado::contacto(Coche & coche) {
+	this->coche->contacto();
+}

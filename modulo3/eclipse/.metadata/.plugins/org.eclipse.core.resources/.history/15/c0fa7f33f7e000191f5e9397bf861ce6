@@ -1,0 +1,99 @@
+/*
+ * Punto2D.cpp
+ *
+ *  Created on: 27 sept. 2019
+ *      Author: antonio
+ */
+
+
+#include<iostream>
+#include<cmath>
+#include "Punto2D.h"
+
+/*
+Punto2D::Punto2D(int x, int y) {
+	this->x=x;
+	this->y=y;
+}
+*/
+
+//Implementacion de un constructor con lista de iniciadores:
+Punto2D::Punto2D(int x, int y) {
+	this->x=x;
+	this->y=y;
+}
+
+float Punto2D::distancia(const Punto2D& p) const{
+	return sqrt(pow(p.x-this->x,2)+pow(p.y-this->y,2));
+}
+
+void Punto2D::imprimir() const {
+	std::cout << "(x: "<< this->x << ",  y: " << this->y << ")"<< std::endl;
+}
+
+Punto2D Punto2D::masCercano(Punto2D* nube, int n){
+
+	float aux[n];
+	float min;
+	int j=0;
+
+	for(int i=0;i<n;i++){
+		aux[i]=Punto2D::distancia(nube[i]);
+		//aux[i]=this->distancia(nube[i]);
+	}
+
+	min=aux[j];
+	for(int i=1;i<n;i++){
+		if(min>aux[i]){
+			j=i;
+			min=aux[j];
+		}
+	}
+	return nube[j];
+}
+
+Punto2D Punto2D::desplazar(int escalar) {
+	this->x = x*escalar;
+	this->y = y*escalar;
+	//Punto2D::x=x+escalar;
+	//Punto2D::y=y+escalar;
+	return * this; //this es un puntero
+
+}
+
+Punto2D Punto2D::desplazarNuevo(int escalar) {
+	//Punto2D nuevoPunto(this->x*escalar,this->y*escalar);
+	//return nuevoPunto;
+
+	//Obtener una copia de this
+	Punto2D nuevoPunto = Punto2D(* this);
+	return nuevoPunto.desplazar(escalar);
+
+}
+
+/*
+Punto2D Punto2D::masCercanoAntonio(Punto2D* nube, int n) {
+	float min = this->distancia(nube[0]);
+	Punto2D puntoMin = nube[0];
+	float dist;
+
+	for(int i=0;i<n;i++){
+			dist = this->distancia(nube[i]);
+			if(dist<min){
+				min=dist;
+				puntoMin=nube[i];
+			}
+		}
+	return puntoMin;
+}
+*/
+
+Punto2D Punto2D::operator +(const Punto2D& p) {
+	return Punto2D (this->x+p.x,this->y+p.y);
+}
+
+Punto2D::~Punto2D() {
+	// TODO Auto-generated destructor stub
+}
+
+

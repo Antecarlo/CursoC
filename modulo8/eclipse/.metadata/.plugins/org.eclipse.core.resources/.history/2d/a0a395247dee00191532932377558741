@@ -1,0 +1,29 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+#include <iostream>
+#include "Fichero.h"
+
+int main(){
+
+	Fichero fichero("config.ini");
+	std::cout << "Tiempo: " <<fichero.getKey("tiempo")<< std::endl;
+	//fichero.setKey("Adicional3", "valor");
+	//fichero.save("config2.ini");
+	fichero.imprimirMapa();
+}
+
+int main(int argc, char *argv[]){
+	if(argc==2){
+		Fichero fichero(argv[1]+".ini");
+		fichero.imprimirMapa();
+	}else{
+		std::cout << "Se esperaba el fichero CSV por argumento... " << std::endl;
+	}
+}
+
+

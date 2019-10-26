@@ -1,0 +1,27 @@
+/*
+ * Escena.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Escena.h"
+
+Escena::Escena() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Escena::dibujar() {
+	for(unsigned i=0;i<figuras.size();i++)
+		figuras[i]->dibujar();
+}
+
+void Escena::addFigura(std::unique_ptr<Figura> figura) {
+	this->figuras.push_back(std::move(figura));
+}
+
+Escena::~Escena() {
+	// TODO Auto-generated destructor stub
+}
+

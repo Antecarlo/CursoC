@@ -1,0 +1,17 @@
+/*
+ * FactoriaFlyWeight.h
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FACTORIAFLYWEIGHT_H_
+#define FACTORIAFLYWEIGHT_H_
+
+class FactoriaFlyWeight {
+public:
+	FactoriaFlyWeight();
+	virtual ~FactoriaFlyWeight();
+};
+
+#endif /* FACTORIAFLYWEIGHT_H_ */

@@ -1,0 +1,6 @@
+12:03:49 **** Incremental Build of configuration Debug for project puntos_static ****
+make all 
+make: No se hace nada para 'all'.
+
+12:03:49 Build Finished. 0 errors, 0 warnings. (took 632ms)
+

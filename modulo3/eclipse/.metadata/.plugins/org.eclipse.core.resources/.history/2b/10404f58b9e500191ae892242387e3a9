@@ -1,0 +1,35 @@
+/*
+ * Tablero.h
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TABLERO_H_
+#define TABLERO_H_
+
+#include<vector>
+#include "Casilla.h"
+#define BOMBA -1
+
+class Tablero {
+
+private:
+	int n, numBombas;
+	std::vector<std::vector<Casilla>> tablero;
+
+	void construirTablero();
+	void colocarBombas();
+	void calcularContador(std::vector<Coordenada> adyacentes);
+	Casilla getCasilla();
+
+public:
+	Tablero(int n, int numBombas);
+
+	void vistaJuego();
+	void vistaTraza();
+
+	virtual ~Tablero();
+};
+
+#endif /* TABLERO_H_ */

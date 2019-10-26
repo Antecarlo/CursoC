@@ -1,0 +1,18 @@
+/*
+ * Peticion.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Peticion.h"
+
+Peticion::Peticion() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Peticion::~Peticion() {
+	// TODO Auto-generated destructor stub
+}
+

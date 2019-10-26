@@ -1,0 +1,28 @@
+/*
+ * EnMarcha.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "EnMarcha.h"
+
+#include <iostream>
+
+EnMarcha::EnMarcha(){
+}
+
+void EnMarcha::frenar(Coche &coche) {
+	std::cout << "Frenar en marcha" << std::endl;
+}
+
+void EnMarcha::acelerar(Coche &coche) {
+}
+
+void EnMarcha::contacto(Coche &coche) {
+}
+
+EnMarcha::~EnMarcha() {
+	// TODO Auto-generated destructor stub
+}
+

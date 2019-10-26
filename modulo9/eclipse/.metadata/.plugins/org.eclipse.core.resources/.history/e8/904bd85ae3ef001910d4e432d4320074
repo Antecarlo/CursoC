@@ -1,0 +1,21 @@
+/*
+ * IPhoneX.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "IPhoneX.h"
+
+IPhoneX::IPhoneX() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void IPhoneX::llamar() {
+}
+
+IPhoneX::~IPhoneX() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,10 @@
+19:34:30 **** Rebuild of configuration Debug for project tiempo2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:37:8: error: 'std::this_thread' has not been declared
+   std::this_thread::sleep_for(std::chrono::milliseconds(x));
+        ^~~~~~~~~~~
+
+19:34:32 Build Failed. 1 errors, 0 warnings. (took 1s.453ms)
+

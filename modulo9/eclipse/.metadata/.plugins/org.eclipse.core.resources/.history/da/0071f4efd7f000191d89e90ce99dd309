@@ -1,0 +1,22 @@
+/*
+ * Texto.h
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TEXTO_H_
+#define TEXTO_H_
+
+#include <vector>
+
+class Texto {
+
+
+
+public:
+	Texto();
+	virtual ~Texto();
+};
+
+#endif /* TEXTO_H_ */

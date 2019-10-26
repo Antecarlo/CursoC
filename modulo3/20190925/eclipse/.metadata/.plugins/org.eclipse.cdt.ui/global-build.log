@@ -1,0 +1,142 @@
+12:34:28 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+Building file: ../principal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"principal.d" -MT"principal.o" -o "principal.o" "../principal.cpp"
+Finished building: ../principal.cpp
+ 
+Building target: objetos
+Invoking: GCC C++ Linker
+g++  -o "objetos"  ./Persona.o ./principal.o   
+Finished building target: objetos
+ 
+12:34:37 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+make: No se hace nada para 'all'.
+13:08:48 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+Building file: ../Coche.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Coche.d" -MT"Coche.o" -o "Coche.o" "../Coche.cpp"
+In file included from ../Coche.cpp:8:0:
+../Coche.h:19:7: error: stray ‘\303’ in program
+  int año;
+       ^
+../Coche.h:19:8: error: stray ‘\261’ in program
+  int año;
+        ^
+../Coche.cpp:17:3: error: stray ‘\303’ in program
+  año=0;
+   ^
+../Coche.cpp:17:4: error: stray ‘\261’ in program
+  año=0;
+    ^
+../Coche.cpp:22:99: error: stray ‘\303’ in program
+ Coche::Coche(std::string marca, std::string modelo, std::string matricula, float cilindrada, int año) {
+                                                                                                   ^
+../Coche.cpp:22:100: error: stray ‘\261’ in program
+ Coche::Coche(std::string marca, std::string modelo, std::string matricula, float cilindrada, int año) {
+                                                                                                    ^
+../Coche.cpp:28:9: error: stray ‘\303’ in program
+  this->año=año;
+         ^
+../Coche.cpp:28:10: error: stray ‘\261’ in program
+  this->año=año;
+          ^
+../Coche.cpp:28:14: error: stray ‘\303’ in program
+  this->año=año;
+              ^
+../Coche.cpp:28:15: error: stray ‘\261’ in program
+  this->año=año;
+               ^
+../Coche.cpp:37:29: error: stray ‘\303’ in program
+  std::cout<< "Año"<<this->año<<std::endl;
+                             ^
+../Coche.cpp:37:30: error: stray ‘\261’ in program
+  std::cout<< "Año"<<this->año<<std::endl;
+                              ^
+In file included from ../Coche.cpp:8:0:
+../Coche.h:19:6: error: expected ‘;’ at end of member declaration
+  int año;
+      ^
+../Coche.h:19:9: error: ‘o’ does not name a type
+  int año;
+         ^
+../Coche.cpp: In constructor ‘Coche::Coche()’:
+../Coche.cpp:17:5: error: expected ‘;’ before ‘o’
+  año=0;
+     ^
+../Coche.cpp:17:2: warning: statement has no effect [-Wunused-value]
+  año=0;
+  ^
+../Coche.cpp: At global scope:
+../Coche.cpp:22:101: error: expected ‘,’ or ‘...’ before ‘o’
+ Coche::Coche(std::string marca, std::string modelo, std::string matricula, float cilindrada, int año) {
+                                                                                                     ^
+../Coche.cpp: In constructor ‘Coche::Coche(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, float, int)’:
+../Coche.cpp:28:11: error: expected ‘;’ before ‘o’
+  this->año=año;
+           ^
+../Coche.cpp:28:8: warning: statement has no effect [-Wunused-value]
+  this->año=año;
+  ~~~~~~^
+../Coche.cpp: In member function ‘void Coche::imprimir()’:
+../Coche.cpp:37:31: error: expected ‘;’ before ‘o’
+  std::cout<< "Año"<<this->año<<std::endl;
+                               ^
+subdir.mk:24: recipe for target 'Coche.o' failed
+make: *** [Coche.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:10:29 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+Building file: ../Coche.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Coche.d" -MT"Coche.o" -o "Coche.o" "../Coche.cpp"
+../Coche.cpp:28:9: error: stray ‘\303’ in program
+  this->año=anyo;
+         ^
+../Coche.cpp:28:10: error: stray ‘\261’ in program
+  this->año=anyo;
+          ^
+../Coche.cpp: In constructor ‘Coche::Coche(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, float, int)’:
+../Coche.cpp:28:8: error: ‘class Coche’ has no member named ‘a’
+  this->año=anyo;
+        ^
+make: *** [Coche.o] Error 1
+subdir.mk:24: recipe for target 'Coche.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:10:51 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+Building file: ../Coche.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Coche.d" -MT"Coche.o" -o "Coche.o" "../Coche.cpp"
+Finished building: ../Coche.cpp
+ 
+Building file: ../principal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"principal.d" -MT"principal.o" -o "principal.o" "../principal.cpp"
+Finished building: ../principal.cpp
+ 
+Building target: objetos
+Invoking: GCC C++ Linker
+g++  -o "objetos"  ./Coche.o ./Persona.o ./principal.o   
+Finished building target: objetos
+ 
+13:11:01 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+make: No se hace nada para 'all'.
+13:13:22 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+Building file: ../Coche.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Coche.d" -MT"Coche.o" -o "Coche.o" "../Coche.cpp"
+Finished building: ../Coche.cpp
+ 
+Building target: objetos
+Invoking: GCC C++ Linker
+g++  -o "objetos"  ./Coche.o ./Persona.o ./principal.o   
+Finished building target: objetos
+ 
+13:13:28 **** Incremental Build of configuration Debug for project objetos ****
+make all 
+make: No se hace nada para 'all'.

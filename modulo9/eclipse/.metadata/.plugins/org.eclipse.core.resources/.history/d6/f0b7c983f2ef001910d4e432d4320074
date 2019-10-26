@@ -1,0 +1,17 @@
+/*
+ * Context.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CONTEXTO_H_
+#define CONTEXTO_H_
+
+class Contexto {
+public:
+	Contexto();
+	virtual ~Contexto();
+};
+
+#endif /* CONTEXTO_H_ */

@@ -1,0 +1,31 @@
+/*
+ * Agenda.cpp
+ *
+ *  Created on: 4 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Agenda.h"
+
+#define CONTADOR 0
+
+Agenda::Agenda() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Agenda::listar(){
+	std::cout << "AGENDA COMPLETA" << std::endl;
+}
+
+void Agenda::addEvento(Fecha fecha, Hora hora, std::string evento) {
+	//std::map<Hora,std::string> aux = {{hora,evento}};
+	this->eventos[fecha][hora]=evento;
+	//this->eventos.at(fecha).insert(std::pair<Hora,std::string>(hora,evento)); DA ERROR  out_of_range
+
+}
+
+Agenda::~Agenda() {
+	// TODO Auto-generated destructor stub
+}
+

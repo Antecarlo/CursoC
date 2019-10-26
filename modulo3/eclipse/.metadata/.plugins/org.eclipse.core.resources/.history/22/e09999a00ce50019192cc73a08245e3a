@@ -1,0 +1,20 @@
+/*
+ * Coordenada.h
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef COORDENADA_H_
+#define COORDENADA_H_
+
+class Coordenada {
+
+	int fila,columna;
+
+public:
+	Coordenada();
+	virtual ~Coordenada();
+};
+
+#endif /* COORDENADA_H_ */

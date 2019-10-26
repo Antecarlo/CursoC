@@ -1,0 +1,24 @@
+/*
+ * cilindro.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CILINDRO_H_
+#define CILINDRO_H_
+
+#include "Figura3D.h"
+
+class Cilindro: public Figura3D {
+
+	double ratio;
+	double altura;
+
+public:
+	Cilindro(std::string etiqueta="",std::string color="black",double ratio=2,double altura=5);
+	void dibujar();
+	virtual ~Cilindro();
+};
+
+#endif /* CILINDRO_H_ */

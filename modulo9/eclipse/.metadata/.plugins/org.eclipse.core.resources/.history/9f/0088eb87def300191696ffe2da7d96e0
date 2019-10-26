@@ -1,0 +1,15 @@
+/*
+ * ExpresionBinaria.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ExpresionBinaria.h"
+ExpresionBinaria::ExpresionBinaria(int numero1, int numero2): numero1(numero1),numero2(numero2) {
+}
+
+ExpresionBinaria::~ExpresionBinaria() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,28 @@
+/*
+ * Fichero.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Fichero.h"
+
+#include <fstream>
+#include <iomanip>
+
+Fichero::Fichero(std::string nombre): nombre(nombre) {
+	// TODO Auto-generated constructor stub
+
+}
+
+std::vector<std::vector<std::string> > Fichero::leerTabla() {
+	std::vector<std::vector<std::string>> aux;
+
+	std::ifstream fich("./"+this->nombre,std::ios::in);
+
+}
+
+Fichero::~Fichero() {
+	// TODO Auto-generated destructor stub
+}
+

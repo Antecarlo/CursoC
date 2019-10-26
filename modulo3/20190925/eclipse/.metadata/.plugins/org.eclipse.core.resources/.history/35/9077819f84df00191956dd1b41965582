@@ -1,0 +1,44 @@
+/*
+ * Coche.cpp
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Coche.h"
+#include <iostream>
+
+Coche::Coche() {
+	// TODO Auto-generated constructor stub
+	marca="";
+	modelo="";
+	matricula="";
+	cilindrada=0.0;
+	año=0;
+}
+
+
+// Constructor
+Coche::Coche(std::string marca, std::string modelo, std::string matricula, float cilindrada, int año) {
+	// TODO Auto-generated constructor stub
+	this->marca = marca;
+	this->modelo=modelo;
+	this->matricula=matricula;
+	this->cilindrada=cilindrada;
+	this->año=año;
+}
+
+void imprimir(){
+	std::cout<< "DATOS DEL COCHE"<< std::endl;
+	std::cout<< "Marca"<< this->marca <<std::endl;
+	std::cout<< "Modelo"<<this->modelo <<std::endl;
+	std::cout<< "Matricula"<<this->matricula<<std::endl;
+	std::cout<< "Cilindrada"<<this->cilindrada <<std::endl;
+	std::cout<< "Año"<<this->año<<std::endl;
+	//std::cout<< marca  modelo  matricula  cilindrada  año << std::endl;
+}
+
+Coche::~Coche() {
+	// TODO Auto-generated destructor stub
+}
+

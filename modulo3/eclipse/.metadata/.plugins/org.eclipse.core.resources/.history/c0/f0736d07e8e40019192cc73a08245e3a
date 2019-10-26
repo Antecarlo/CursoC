@@ -1,0 +1,23 @@
+/*
+ * Tarifa.h
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TARIFA_H_
+#define TARIFA_H_
+
+namespace std {
+namespace literals {
+
+class Tarifa {
+public:
+	Tarifa();
+	virtual ~Tarifa();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* TARIFA_H_ */

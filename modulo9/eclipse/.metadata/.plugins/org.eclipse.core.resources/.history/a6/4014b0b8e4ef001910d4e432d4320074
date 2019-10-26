@@ -1,0 +1,20 @@
+/*
+ * IPad.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "IPad.h"
+
+IPad::IPad(int capacidad): Tablet(capacidad) {
+	// TODO Auto-generated constructor stub
+}
+
+void IPad::internet() {
+}
+
+IPad::~IPad() {
+	// TODO Auto-generated destructor stub
+}
+

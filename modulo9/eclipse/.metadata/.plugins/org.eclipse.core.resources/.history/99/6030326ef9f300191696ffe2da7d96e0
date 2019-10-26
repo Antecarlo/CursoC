@@ -1,0 +1,17 @@
+/*
+ * Peticion.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef PETICION_H_
+#define PETICION_H_
+
+class Peticion {
+public:
+	Peticion();
+	virtual ~Peticion();
+};
+
+#endif /* PETICION_H_ */

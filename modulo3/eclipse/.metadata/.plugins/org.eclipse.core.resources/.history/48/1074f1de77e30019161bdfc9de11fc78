@@ -1,0 +1,23 @@
+/*
+ * Figura.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef FIGURA_H_
+#define FIGURA_H_
+
+namespace std {
+namespace literals {
+
+class Figura {
+public:
+	Figura();
+	virtual ~Figura();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* FIGURA_H_ */

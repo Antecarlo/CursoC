@@ -1,0 +1,30 @@
+/*
+ * Persona.h
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef PERSONA_H_
+#define PERSONA_H_
+
+#include <string>
+
+class Persona {
+
+	//Definicion de atributos
+		std::string nombre;
+		std::string apellidos;
+		float peso;
+		float altura;
+
+
+public:
+	//Constructor por defecto
+	Persona();
+
+	//Destructor
+	virtual ~Persona();
+};
+
+#endif /* PERSONA_H_ */

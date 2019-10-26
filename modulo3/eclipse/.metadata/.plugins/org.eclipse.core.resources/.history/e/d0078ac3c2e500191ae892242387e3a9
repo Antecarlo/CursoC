@@ -1,0 +1,24 @@
+/*
+ * Jugador.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Jugador.h"
+
+Jugador::Jugador() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Jugador::Jugador(std::string alias) {
+}
+
+Coordenada Jugador::getCoordenada() {
+}
+
+Jugador::~Jugador() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,26 @@
+/*
+ * Factory.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FACTORY_H_
+#define FACTORY_H_
+
+#include "SmartPhone.h"
+#include "Tablet.h"
+
+//Tener un metodo de creacion para cada producto
+
+class Factory {
+public:
+	Factory();
+
+	virtual SmartPhone * createSmartPhone()=0;
+	virtual Tablet * createTablet()=0;
+
+	virtual ~Factory();
+};
+
+#endif /* FACTORY_H_ */

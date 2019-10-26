@@ -1,0 +1,16 @@
+/*
+ * Fichero.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Fichero.h"
+
+Fichero::Fichero(std::string path): path(path) {
+}
+
+Fichero::~Fichero() {
+	// TODO Auto-generated destructor stub
+}
+

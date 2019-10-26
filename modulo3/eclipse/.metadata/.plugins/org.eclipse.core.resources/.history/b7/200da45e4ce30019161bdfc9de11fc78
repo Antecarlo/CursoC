@@ -1,0 +1,23 @@
+/*
+ * empleado.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "empleado.h"
+
+namespace std {
+namespace literals {
+
+empleado::empleado() {
+	// TODO Auto-generated constructor stub
+
+}
+
+empleado::~empleado() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

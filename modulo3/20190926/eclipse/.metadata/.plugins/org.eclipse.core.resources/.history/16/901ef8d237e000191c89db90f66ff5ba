@@ -1,0 +1,19 @@
+/*
+ * Punto2D.cpp
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Punto2D.h"
+
+int main(){
+	Punto2D nube[]={Punto2D(7,2),Punto2D(4,2),Punto2D(0,3),Punto2D(9,2)};
+	int n=sizeof(nube)/sizeof(Punto2D);
+
+	Punto2D punto(1,5);
+	Punto2D masCercano=punto.masCercano(nube, n);
+
+	masCercano.imprimir();
+
+}

@@ -1,0 +1,29 @@
+/*
+ * Figura.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef FIGURA_H_
+#define FIGURA_H_
+
+#include<string>
+
+class Figura {
+
+	std::string etiqueta;
+	std::string color;
+
+
+public:
+	Figura();
+
+	virtual void dibujar()=0;
+
+
+	virtual ~Figura();
+};
+
+
+#endif /* FIGURA_H_ */

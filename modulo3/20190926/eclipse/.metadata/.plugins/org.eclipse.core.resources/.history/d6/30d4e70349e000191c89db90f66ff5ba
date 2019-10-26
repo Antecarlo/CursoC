@@ -1,0 +1,25 @@
+/*
+ * Hora.cpp
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Hora.h"
+#include<iostream>
+
+Hora::Hora() {
+	// TODO Auto-generated constructor stub
+std::chrono::system clock::now();
+}
+
+Hora::Hora(int h, int m, int s) {
+	this->horas=h;
+	this->minutos=m;
+	this->segundos=s;
+}
+
+Hora::~Hora() {
+	// TODO Auto-generated destructor stub
+}
+

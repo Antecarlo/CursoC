@@ -1,0 +1,18 @@
+/*
+ * Sms.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Sms.h"
+
+
+
+Sms::Sms(long numD, int d, int M, int y,int horas, int minutos, int segundos): Evento(numD,d,M,y){
+	this->hor(horas,minutos,segundos);
+}
+
+Sms::~Sms() {
+	// TODO Auto-generated destructor stub
+}

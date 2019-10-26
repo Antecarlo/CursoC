@@ -1,0 +1,60 @@
+14:32:17 **** Incremental Build of configuration Debug for project creacion_prototype ****
+make all 
+Building file: ../Cilindro.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cilindro.d" -MT"Cilindro.o" -o "Cilindro.o" "../Cilindro.cpp"
+Finished building: ../Cilindro.cpp
+ 
+Building file: ../Circulo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Circulo.d" -MT"Circulo.o" -o "Circulo.o" "../Circulo.cpp"
+Finished building: ../Circulo.cpp
+ 
+Building file: ../Escena.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Escena.d" -MT"Escena.o" -o "Escena.o" "../Escena.cpp"
+Finished building: ../Escena.cpp
+ 
+Building file: ../Esfera.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Esfera.d" -MT"Esfera.o" -o "Esfera.o" "../Esfera.cpp"
+Finished building: ../Esfera.cpp
+ 
+Building file: ../FactoriaPrototipos.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FactoriaPrototipos.d" -MT"FactoriaPrototipos.o" -o "FactoriaPrototipos.o" "../FactoriaPrototipos.cpp"
+Finished building: ../FactoriaPrototipos.cpp
+ 
+Building file: ../Figura.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Figura.d" -MT"Figura.o" -o "Figura.o" "../Figura.cpp"
+Finished building: ../Figura.cpp
+ 
+Building file: ../Figura2D.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Figura2D.d" -MT"Figura2D.o" -o "Figura2D.o" "../Figura2D.cpp"
+Finished building: ../Figura2D.cpp
+ 
+Building file: ../Figura3D.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Figura3D.d" -MT"Figura3D.o" -o "Figura3D.o" "../Figura3D.cpp"
+Finished building: ../Figura3D.cpp
+ 
+Building file: ../Triangulo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Triangulo.d" -MT"Triangulo.o" -o "Triangulo.o" "../Triangulo.cpp"
+Finished building: ../Triangulo.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: creacion_prototype
+Invoking: GCC C++ Linker
+g++  -o "creacion_prototype"  ./Cilindro.o ./Circulo.o ./Escena.o ./Esfera.o ./FactoriaPrototipos.o ./Figura.o ./Figura2D.o ./Figura3D.o ./Triangulo.o ./main.o   
+Finished building target: creacion_prototype
+ 
+
+14:32:29 Build Finished. 0 errors, 0 warnings. (took 12s.21ms)
+

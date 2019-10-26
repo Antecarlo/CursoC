@@ -1,0 +1,18 @@
+/*
+ * principal.cpp
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#include<Persona.h>
+
+int main(){
+
+	Persona p1("Alberto","Sanz",90,1.94);
+
+}
+
+
+
+

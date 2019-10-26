@@ -1,0 +1,42 @@
+/*
+ * FormateadorCsvHtml5.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FormateadorCsvHtml5.h"
+
+#include <sstream>
+#include <fstream>
+
+FormateadorCsvHtml5::FormateadorCsvHtml5() {
+	// TODO Auto-generated constructor stub
+
+}
+
+std::string FormateadorCsvHtml5::rowToHtml(std::string csv) {
+	std::istringstream is(csv);
+	std::string filaHTML,columnaCSV;
+
+	filaHTML = "<tr>";
+	while (std::getline(is,columnaCSV,';')){
+		filaHTML += this->colToHtml(columnaCSV);
+	}
+	filaHTML +="<tr>";
+	return filaHTML;
+}
+
+FormateadorCsvHtml5::~FormateadorCsvHtml5() {
+	// TODO Auto-generated destructor stub
+}
+
+void FormateadorCsvHtml5::inyectarCSV() {
+}
+
+void FormateadorCsvHtml5::formatearCsvHtml5(std::string ficheroCSV) {
+	std::ifstream finTemplate("./templates/");
+}
+
+std::string FormateadorCsvHtml5::getNombreHTML(std::string ficheroCSV) {
+}

@@ -1,0 +1,18 @@
+/*
+ * Apagado.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Apagado.h"
+
+Apagado::Apagado() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Apagado::~Apagado() {
+	// TODO Auto-generated destructor stub
+}
+

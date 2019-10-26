@@ -1,0 +1,18 @@
+/*
+ * FechaHora.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FECHAHORA_H_
+#define FECHAHORA_H_
+
+class FechaHora {
+public:
+	FechaHora();
+	virtual ~FechaHora();
+};
+
+
+#endif /* FECHAHORA_H_ */

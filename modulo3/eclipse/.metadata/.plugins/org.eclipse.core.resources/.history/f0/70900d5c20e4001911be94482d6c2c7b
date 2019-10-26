@@ -1,0 +1,19 @@
+/*
+ * Fecha.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Fecha.h"
+
+Fecha::Fecha(int d,int M,int y) {
+	this->d=d;
+	this->M=M;
+	this->y=y;
+}
+
+Fecha::~Fecha() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,20 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 4 oct. 2019
+ *      Author: antonio
+ */
+
+void testFecha(){
+	Fecha f1(8,1,2019);
+	Fecha f2(7,2,2019);
+
+	if(f1<f2)
+		std::cout << "f1 < f2" << std::endl;
+}
+
+int main(){
+
+	testFecha();
+}
+

@@ -1,0 +1,25 @@
+/*
+ * FactorySamsung.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FactorySamsung.h"
+
+FactorySamsung::FactorySamsung() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SmartPhone* FactorySamsung::createSmartPhone(int numero) {
+
+}
+
+Tablet* FactorySamsung::createTablet(int capacidad) {
+}
+
+FactorySamsung::~FactorySamsung() {
+	// TODO Auto-generated destructor stub
+}
+

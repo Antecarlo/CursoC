@@ -1,0 +1,26 @@
+/*
+ * Evento.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EVENTO_H_
+#define EVENTO_H_
+#include "Fecha.h"
+#include "Hora.h"
+
+
+class Evento {
+
+	long numDestino;
+	Fecha fecha;
+	Hora horaIn;
+
+public:
+	Evento(long numD, int d=1, int M=1, int y=1970,int horas=0, int minutos=0, int segundos=0);
+	virtual ~Evento();
+};
+
+
+#endif /* EVENTO_H_ */

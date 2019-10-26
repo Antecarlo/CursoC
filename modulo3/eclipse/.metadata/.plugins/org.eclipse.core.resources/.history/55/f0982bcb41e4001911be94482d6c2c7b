@@ -1,0 +1,18 @@
+/*
+ * Evento.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Evento.h"
+
+Evento::Evento(long numD, int d, int M, int y, int horas, int minutos, int segundos){
+	this->fc(d,M,y);
+	this->he(horas,minutos,segundos);
+	this->numDestino=numD;
+}
+
+Evento::~Evento() {
+	// TODO Auto-generated destructor stub
+}

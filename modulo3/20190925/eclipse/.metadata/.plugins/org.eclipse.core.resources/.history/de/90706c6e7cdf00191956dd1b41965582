@@ -1,0 +1,17 @@
+/*
+ * Persona.h
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef PERSONA_H_
+#define PERSONA_H_
+
+class Persona {
+public:
+	Persona();
+	virtual ~Persona();
+};
+
+#endif /* PERSONA_H_ */

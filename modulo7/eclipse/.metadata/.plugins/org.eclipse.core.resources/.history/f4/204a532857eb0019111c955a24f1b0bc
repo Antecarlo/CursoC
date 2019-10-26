@@ -1,0 +1,44 @@
+/*
+ * MaTemp.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef MATEMP_H_
+#define MATEMP_H_
+
+#include<vector>
+#include<memory>
+
+template <class T> class Matemp {
+
+	int filas,col;
+
+	std::shared_ptr<std::unique_ptr <T []> []> datos;
+
+
+	friend std::ostream & operator << (std::ostream & os, const Matemp<T> & m);
+
+	bool checkSuma(const Matemp<T> & m);
+	bool checkMul (const Matemp<T> & m);
+
+public:
+	Matemp(int filas=10, int col=10, T val=0);
+
+	//Lanzar excepcion si sale fuera
+	void set(int fila, int col, int val);
+	int get(int fila, int col);
+
+	//Lanzar excepcion si no tiene tam. compatible
+	Matemp<T> operator + (const Matemp<T> & m);
+	Matemp<T> operator * (const Matemp<T> & m);
+
+	void imprimir();
+
+	virtual ~Matriz();
+};
+
+
+
+#endif /* MATEMP_H_ */

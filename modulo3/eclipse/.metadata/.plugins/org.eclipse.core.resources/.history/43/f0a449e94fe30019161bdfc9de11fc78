@@ -1,0 +1,26 @@
+/*
+ * Empleado.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Empleado.h"
+
+Empleado::Empleado() {
+	this->sueldo=0;
+	this->empresa="";
+}
+
+Empleado::Empleado(std::string nombre, std::string apellidos, float peso,
+		float altura, double sueldo, std::string empresa): Persona(nombre,apellidos, peso, altura) {
+	this->sueldo=sueldo;
+	this->empresa=empresa;
+}
+
+void Empleado::dormir() {
+}
+
+Empleado::~Empleado() {
+	// TODO Auto-generated destructor stub
+}

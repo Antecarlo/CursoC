@@ -1,0 +1,18 @@
+/*
+ * cilindro.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Cilindro.h"
+
+cilindro::cilindro() {
+	// TODO Auto-generated constructor stub
+
+}
+
+cilindro::~cilindro() {
+	// TODO Auto-generated destructor stub
+}
+

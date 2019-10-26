@@ -1,0 +1,21 @@
+/*
+ * OperacionesIO.cpp
+ *
+ *  Created on: 15 oct. 2019
+ *      Author: antonio
+ */
+
+#include "OperacionesIO.h"
+
+OperacionesIO::OperacionesIO() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void OperacionesIO::cargarCuentas(std::map<int, Cuenta>& cuentas) {
+}
+
+OperacionesIO::~OperacionesIO() {
+	// TODO Auto-generated destructor stub
+}
+

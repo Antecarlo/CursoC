@@ -1,0 +1,40 @@
+/*
+ * matriz.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef MATRIZ_H_
+#define MATRIZ_H_
+
+#include<vector>
+#include<memory>
+
+class Matriz {
+
+	int filas,col;
+
+	std::shared_ptr<std::unique_ptr <int []> []> datos;
+
+
+	friend std::ostream & operator << (std::ostream & os, const Matriz & m);
+
+	bool checkSuma(const Matriz & m);
+	bool checkMul (const Matriz & m);
+
+public:
+	Matriz(int filas=10, int col=10, int val=0);
+
+	//Lanzar excepcion si sale fuera
+	void set(int fila, int col, int val);
+	int get(int fila, int col);
+
+	//Lanzar excepcion si no tiene tam. compatible
+	Matriz operator + (const Matriz & m);
+	Matriz operator * (const Matriz & m);
+
+	virtual ~Matriz();
+};
+
+#endif /* MATRIZ_H_ */

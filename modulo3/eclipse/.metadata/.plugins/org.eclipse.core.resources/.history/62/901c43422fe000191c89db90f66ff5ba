@@ -1,0 +1,44 @@
+/*
+ * principal.cpp
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Persona.h"
+#include "Coche.h"
+
+int main(){
+
+	/*
+	Persona p2; //Llama al const. por defecto.
+
+	//Llama al constructor con 4 parametros.
+	Persona p1("Alberto","Sanz",90,1.94);
+	Persona p3("Sara","Gomez",65,1.76);
+
+	p2.dormir();
+	p1.hablar(p3);
+	*/
+
+
+	//Coches
+	const Coche coche1("Ford","Fiesta","2349GRP",110.45,2018);
+	coche1.imprimir();
+	
+	//Uso del constructor copia
+	const Coche coche2(coche1);
+	coche2.imprimir();
+	
+	//Uso del operador =
+	const Coche coche3;
+	coche3=coche2;
+	coche3.imprimir();
+	
+	//if(coche3==coche2 ) Habría que implementarlo en la clase
+	// std::cout << "coche3 y coche2 son iguales";
+}
+
+
+
+

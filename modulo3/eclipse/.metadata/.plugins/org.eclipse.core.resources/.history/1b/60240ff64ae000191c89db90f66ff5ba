@@ -1,0 +1,14 @@
+/*
+ * Main file
+ *
+ */
+
+#include "Hora.h"
+#include<iostream>
+
+int main(){
+
+	Hora horaActual();
+
+
+}

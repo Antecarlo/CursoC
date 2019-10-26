@@ -1,0 +1,37 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Estilo.h"
+#include <iostream>
+
+void pruebaEstilo(){
+	Estilo s1;
+	Estilo s2(true);
+
+	s1.imprimir();
+	int codigo1 = s1.getCodigo();
+	std::cout << "Codigo: "<< codigo1 << std::endl;
+
+	s2= Estilo::getEstilo(codigo1);
+	s2.imprimir();
+}
+
+void prueba final(){
+	Texto texto(factoria);
+	Estilo estiloBase;
+	FactoriaFlyWeight factoria(estiloBase);
+
+	texto.addLetra('A',Estilo);
+}
+
+
+int main(){
+	pruebaEstilo();
+
+}
+
+

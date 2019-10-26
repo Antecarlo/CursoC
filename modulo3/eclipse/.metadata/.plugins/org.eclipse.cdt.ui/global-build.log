@@ -1,0 +1,15 @@
+12:46:47 **** Incremental Build of configuration Debug for project factura_llamadas ****
+make all 
+Building file: ../Factura.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Factura.d" -MT"Factura.o" -o "Factura.o" "../Factura.cpp"
+Finished building: ../Factura.cpp
+ 
+Building target: factura_llamadas
+Invoking: GCC C++ Linker
+g++  -o "factura_llamadas"  ./Call.o ./CallI.o ./Cliente.o ./Evento.o ./Factura.o ./Fecha.o ./Hora.o ./Sms.o ./Tarifa.o ./main.o   
+Finished building target: factura_llamadas
+ 
+12:46:53 **** Incremental Build of configuration Debug for project factura_llamadas ****
+make all 
+make: No se hace nada para 'all'.

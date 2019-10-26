@@ -1,0 +1,144 @@
+/*
+ * MaTemp.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef MATEMP_H_
+#define MATEMP_H_
+
+#include<vector>
+#include<memory>
+#include<iostream>
+
+#include "Excepcion.h"
+
+template <class T> class Matemp {
+
+	int filas,col;
+
+	std::shared_ptr<std::unique_ptr <T []> []> datos;
+
+
+	friend std::ostream & operator << (std::ostream & os, const Matemp<T> & m);
+
+	bool checkSuma(const Matemp<T> & m);
+	bool checkMul (const Matemp<T> & m);
+
+public:
+	Matemp(int filas=10, int col=10, T val=0);
+
+	//Lanzar excepcion si sale fuera
+	void set(int fila, int col, T val);
+	int get(int fila, int col);
+
+	//Lanzar excepcion si no tiene tam. compatible
+	Matemp<T> operator + (const Matemp<T> & m);
+	Matemp<T> operator * (const Matemp<T> & m);
+
+	void imprimir();
+
+	virtual ~Matemp();
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+template<class T> Matemp<T>::Matemp(int filas, int col, T val) {
+
+	this->filas=filas;
+	this->col=col;
+
+	this->datos=std::make_unique<std::unique_ptr<T []>[]>(this->filas);
+
+	for(int i=0;i<filas;i++)
+		this->datos[i]=std::make_unique<T []>(this->col);
+
+	for(int i=0;i<filas;i++)
+		for(int j=0;j<col;j++)
+			this->datos[i][j]=val;
+}
+
+template<class T> bool Matemp<T>::checkSuma(const Matemp<T> & m) {
+	return this->filas==m.filas && this->col==m.col;
+}
+
+template<class T> bool Matemp<T>::checkMul(const Matemp<T> & m) {
+	return this->col==m.filas;
+}
+
+template<class T> void Matemp<T>::set(int fila, int col, T val) {
+	this->datos[fila][col]=val;
+}
+
+template<class T> int Matemp<T>::get(int fila, int col) {
+	if(fila >= 0 && fila < this->filas && col>=0 && col < this->col){
+		return this->datos[fila][col];
+	}else{
+		char s[50];
+		std::sprintf(s,"%d %d", fila, col);
+		throw Excepcion("Fuera de rango: "+std::string(s));
+	}
+}
+
+template<class T> Matemp Matemp<T>::operator +(const Matemp<T> & m) {
+	T aux(this->filas,this->col);
+	if(checkSuma(m)){
+		for(int i=0;i<this->filas;i++)
+			for(int j=0;j<this->col;j++)
+				aux.datos[i][j]=this->datos[i][j]+m.datos[i][j];
+		return aux;
+	}else{
+		//Lanzar excepcion
+		throw Excepcion("Las matrices no son compatibles para realizar la suma ");
+	}
+}
+
+template<class T> void Matemp<T>::imprimir() {
+	for(int i=0;i<this->filas;i++){
+		for(int j=0;j<this->col;j++){
+			std::cout << this->datos[i][j] << " ";
+		}
+		std::cout << "\n";
+	}
+}
+
+
+template<class T> Matemp Matemp<T>::operator *(const Matemp<T>& m) {
+	T aux(this->filas,m.col);
+	int aux2;
+
+	if(checkMul(m)){
+		for(int i=0;i<this->filas;i++){
+			for(int j=0;j<m.col;j++){
+				aux2=0;
+				for(int k=0;k<this->col;k++){
+					aux2=aux2+(this->datos[i][k]*m.datos[k][j]);
+				}
+			aux.datos[i][j]=aux2;
+			}
+		}
+		return aux;
+
+	}else{
+		//Lanzar excepcion
+		throw Excepcion("Las matrices no son compatibles para realizar la multiplicacion ");
+	}
+}
+
+
+
+template<class T> std::ostream & operator << (std::ostream & os, const MaTemp<T> & m){
+	for(int i=0;i<m.filas;i++){
+		for(int j=0;j<m.col;j++)
+			std::cout << m.datos[i][j] << " ";
+		std::cout << "\n";
+	}
+	return os;
+}
+
+template<class T> MaTemp<T>::~MaTemp() {
+	// TODO Auto-generated destructor stub
+}
+
+#endif /* MATEMP_H_ */

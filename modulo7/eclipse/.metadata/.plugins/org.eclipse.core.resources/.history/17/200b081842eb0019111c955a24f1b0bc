@@ -1,0 +1,17 @@
+/*
+ * matriz.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef MATRIZ_H_
+#define MATRIZ_H_
+
+class matriz {
+public:
+	matriz();
+	virtual ~matriz();
+};
+
+#endif /* MATRIZ_H_ */

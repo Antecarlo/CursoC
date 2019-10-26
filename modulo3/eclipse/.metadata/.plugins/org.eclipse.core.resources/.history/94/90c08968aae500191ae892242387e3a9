@@ -1,0 +1,31 @@
+/*
+ * Casilla.h
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CASILLA_H_
+#define CASILLA_H_
+
+#include "Coordenada.h"
+#define BOMBA -1
+
+class Casilla {
+
+	Coordenada coor;
+	bool abierta;
+	int contador;
+
+public:
+
+	Casilla(Coordenada coor, bool abierta, int contador);
+
+	bool isBomba(){return contador == BOMBA;}
+	void vistaUser();
+	void vistaOculta();
+
+	virtual ~Casilla();
+};
+
+#endif /* CASILLA_H_ */

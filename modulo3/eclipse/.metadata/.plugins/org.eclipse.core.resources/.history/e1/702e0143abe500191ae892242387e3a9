@@ -1,0 +1,33 @@
+/*
+ * Casilla.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Casilla.h"
+
+Casilla::Casilla(Coordenada coor, bool abierta): coor(coor),abierta(abierta) {
+}
+
+bool Casilla::isBomba() {
+	if(this->bomba == true){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+Casilla::Casilla(Coordenada coor, bool abierta, int contador) {
+}
+
+void Casilla::vistaJuego() {
+}
+
+void Casilla::vistaTraza() {
+}
+
+Casilla::~Casilla() {
+	// TODO Auto-generated destructor stub
+}
+

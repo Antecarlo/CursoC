@@ -1,0 +1,25 @@
+/*
+ * Circulo.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef CIRCULO_H_
+#define CIRCULO_H_
+
+#include "Figura2D.h"
+
+namespace std {
+namespace literals {
+
+class Circulo: public Figura2D {
+public:
+	Circulo();
+	virtual ~Circulo();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* CIRCULO_H_ */

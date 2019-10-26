@@ -1,0 +1,17 @@
+/*
+ * Tablet.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TABLET_H_
+#define TABLET_H_
+
+class Tablet {
+public:
+	Tablet();
+	virtual ~Tablet();
+};
+
+#endif /* TABLET_H_ */

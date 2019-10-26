@@ -1,0 +1,17 @@
+/*
+ * S10.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef S10_H_
+#define S10_H_
+
+class S10 {
+public:
+	S10();
+	virtual ~S10();
+};
+
+#endif /* S10_H_ */

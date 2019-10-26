@@ -1,0 +1,29 @@
+/*
+ * CallI.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CALLI_H_
+#define CALLI_H_
+
+#include "Call.h"
+
+
+class CallI: public Call {
+
+	friend std::ostream & operator <<(std::ostream & os, const CallI & cI);
+
+protected:
+	float roaming;
+
+public:
+	CallI();
+	CallI(long numD,double roaming, double importe, Fecha fecha, Hora hora, Hora horaFin);
+	double calcular() const;
+	virtual ~CallI();
+};
+
+
+#endif /* CALLI_H_ */

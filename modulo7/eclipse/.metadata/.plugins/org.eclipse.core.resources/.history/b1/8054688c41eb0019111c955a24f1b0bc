@@ -1,0 +1,30 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+
+#include <iostream>
+#include <memory>
+
+void test_unique_ptr(){
+	//Definir un array dinamico:
+	std::unique_ptr<int []> v;
+
+	v = std::make_unique<int []>(10);
+
+	for(int i=0;i<10;i++)
+		v[i]=i+1;
+
+	for(int i=0;i<10;i++)
+		std::cout << v[i] <<" ";
+	std::cout << std::endl;
+}
+
+int main(){
+
+}
+
+

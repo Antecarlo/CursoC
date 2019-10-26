@@ -1,0 +1,25 @@
+/*
+ * Tarifa.h
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TARIFA_H_
+#define TARIFA_H_
+
+
+class Tarifa {
+
+	double importeSMS;
+	double importeSGCall;
+	double importeR;
+	double importeSGCallInt;
+
+public:
+	Tarifa(double sms=0.05,double sgCall=0.01, double roaming=2.5 ,double sgCallInt=0.02);
+	virtual ~Tarifa();
+};
+
+
+#endif /* TARIFA_H_ */

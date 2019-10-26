@@ -1,0 +1,32 @@
+/*
+ * Vector.cpp
+ *
+ *  Created on: 27 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Vector.h"
+
+namespace std {
+namespace literals {
+
+Vector::Vector() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Vector::Vector(int numero, int size) {
+}
+
+void Vector::imprimir() {
+}
+
+Vector Vector::add() {
+}
+
+Vector::~Vector() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

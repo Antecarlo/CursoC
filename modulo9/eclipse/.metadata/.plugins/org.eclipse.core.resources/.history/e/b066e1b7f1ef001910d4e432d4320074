@@ -1,0 +1,17 @@
+/*
+ * EstrategiaBurbuja.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ESTRATEGIABURBUJA_H_
+#define ESTRATEGIABURBUJA_H_
+
+class EstrategiaBurbuja {
+public:
+	EstrategiaBurbuja();
+	virtual ~EstrategiaBurbuja();
+};
+
+#endif /* ESTRATEGIABURBUJA_H_ */

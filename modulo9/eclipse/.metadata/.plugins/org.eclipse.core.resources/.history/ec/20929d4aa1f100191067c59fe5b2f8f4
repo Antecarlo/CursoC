@@ -1,0 +1,25 @@
+/*
+ * Apagado.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Apagado.h"
+
+Apagado::Apagado(std::unique_ptr<Coche> coche): State(coche) {
+
+}
+
+Apagado::~Apagado() {
+	// TODO Auto-generated destructor stub
+}
+
+void Apagado::frenar() {
+}
+
+void Apagado::acelerar() {
+}
+
+void Apagado::contacto() {
+}

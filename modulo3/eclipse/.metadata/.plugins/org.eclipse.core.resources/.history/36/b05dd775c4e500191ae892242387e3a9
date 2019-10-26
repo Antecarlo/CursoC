@@ -1,0 +1,30 @@
+/*
+ * Buscaminas.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Buscaminas.h"
+
+Buscaminas::Buscaminas() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Buscaminas::jugar() {
+	bool continuar=true;
+	Coordenada coor;
+
+	do{
+		std::cout << "Introduce coordenada: ";
+		coor = jugador.getCoordenada();
+
+
+	}while(continuar);
+}
+
+Buscaminas::~Buscaminas() {
+	// TODO Auto-generated destructor stub
+}
+

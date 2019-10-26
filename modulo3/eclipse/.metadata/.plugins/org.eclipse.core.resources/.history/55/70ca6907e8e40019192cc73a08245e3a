@@ -1,0 +1,23 @@
+/*
+ * Tarifa.cpp
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Tarifa.h"
+
+namespace std {
+namespace literals {
+
+Tarifa::Tarifa() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Tarifa::~Tarifa() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

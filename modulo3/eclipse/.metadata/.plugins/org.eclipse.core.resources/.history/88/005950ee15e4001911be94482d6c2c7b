@@ -1,0 +1,25 @@
+/*
+ * Esfera.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ESFERA_H_
+#define ESFERA_H_
+
+#include "Figura3D.h"
+
+namespace std {
+namespace literals {
+
+class Esfera: public Figura3D {
+public:
+	Esfera();
+	virtual ~Esfera();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* ESFERA_H_ */

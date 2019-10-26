@@ -1,0 +1,25 @@
+/*
+ * Sms.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef SMS_H_
+#define SMS_H_
+
+#include "Evento.h"
+#include "Hora.h"
+
+
+class Sms: public Evento {
+
+	Hora hor;
+
+public:
+	Sms(long numD, int d=1, int M=1, int y=1970,int horas, int minutos, int segundos);
+	virtual ~Sms();
+};
+
+
+#endif /* SMS_H_ */

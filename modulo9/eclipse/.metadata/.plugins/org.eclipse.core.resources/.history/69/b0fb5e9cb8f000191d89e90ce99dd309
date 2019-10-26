@@ -1,0 +1,33 @@
+/*
+ * FactoriaPrototipos.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FACTORIAPROTOTIPOS_H_
+#define FACTORIAPROTOTIPOS_H_
+
+#include <map>
+#include <string>
+#include <memory>
+
+#include "Figura.h"
+
+enum TFiguras {CILINDRO, CIRCULO, ESFERA, TRIANGULO};
+
+class FactoriaPrototipos2 {
+
+	std::map<TFiguras, std::shared_ptr<Figura>> prototipos;
+	void inicializarPrototipos();
+
+public:
+	FactoriaPrototipos2();
+
+	std::shared_ptr<Figura> getPrototipo (TFiguras figura);
+	void imprimir();
+
+	virtual ~FactoriaPrototipos2();
+};
+
+#endif /* FACTORIAPROTOTIPOS_H_ */

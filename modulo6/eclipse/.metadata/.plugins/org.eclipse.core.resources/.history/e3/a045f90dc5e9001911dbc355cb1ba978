@@ -1,0 +1,18 @@
+/*
+ * Acertijos.cpp
+ *
+ *  Created on: 8 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Acertijos.h"
+
+Acertijos::Acertijos() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Acertijos::~Acertijos() {
+	// TODO Auto-generated destructor stub
+}
+

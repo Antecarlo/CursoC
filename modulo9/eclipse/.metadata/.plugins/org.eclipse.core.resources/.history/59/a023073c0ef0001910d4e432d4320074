@@ -1,0 +1,17 @@
+/*
+ * FactoriaPrototipos.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef FACTORIAPROTOTIPOS_H_
+#define FACTORIAPROTOTIPOS_H_
+
+class FactoriaPrototipos {
+public:
+	FactoriaPrototipos();
+	virtual ~FactoriaPrototipos();
+};
+
+#endif /* FACTORIAPROTOTIPOS_H_ */

@@ -1,0 +1,43 @@
+/*
+ * Vector.h
+ *
+ *  Created on: 27 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef VECTOR_H_
+#define VECTOR_H_
+
+#include<iostream>
+
+template <class T> class Vector{
+
+	T * numeros;
+	int size;
+	int cont;
+
+public:
+
+	Vector(int tama=10);
+
+	//Constructor copia sobrecargado
+	Vector(const Vector<T> &v);
+
+	//Operador= sobrecargado
+	Vector & operator=(const Vector<T> & v);
+
+	void imprimir();
+
+	bool add(T elemento);
+
+	void set(int pos, T elemento);
+
+	virtual ~Vector();
+};
+
+///////////////////////// CPP ////////////////////////////
+
+
+
+
+#endif /* VECTOR_H_ */

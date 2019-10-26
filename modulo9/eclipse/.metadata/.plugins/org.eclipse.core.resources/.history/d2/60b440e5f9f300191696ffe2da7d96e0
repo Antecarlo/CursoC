@@ -1,0 +1,20 @@
+/*
+ * Sucesor.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef SUCESOR_H_
+#define SUCESOR_H_
+
+class Sucesor {
+public:
+	Sucesor();
+
+	virtual manejarPeticion()=0;
+
+	virtual ~Sucesor();
+};
+
+#endif /* SUCESOR_H_ */

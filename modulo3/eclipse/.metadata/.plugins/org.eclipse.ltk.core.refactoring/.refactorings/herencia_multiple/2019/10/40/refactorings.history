@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;herencia_multiple/tiempo.h&apos; to &apos;Tiempo.h&apos;" description="Rename resource &apos;tiempo.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tiempo.h" name="Tiempo.h" stamp="1569918933941" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;herencia_multiple/tiempo.cpp&apos; to &apos;Tiempo.cpp&apos;" description="Rename resource &apos;tiempo.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tiempo.cpp" name="Tiempo.cpp" stamp="1569918943312" updateReferences="true"/>
+</session>

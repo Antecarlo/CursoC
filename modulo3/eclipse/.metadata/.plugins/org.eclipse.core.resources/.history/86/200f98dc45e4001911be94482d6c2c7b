@@ -1,0 +1,22 @@
+/*
+ * Call.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Call.h"
+
+Call::Call(){
+
+}
+
+Call::Call(){
+	// TODO Auto-generated constructor stub
+	this->horaFin(horas2,minutos2,segundos2);
+}
+
+Call::~Call() {
+	// TODO Auto-generated destructor stub
+}
+

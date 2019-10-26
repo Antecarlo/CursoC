@@ -1,0 +1,19 @@
+/*
+ * Circulo.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Circulo.h"
+#include<string>
+
+Circulo::Circulo(std::string etiqueta,std::string color,double ratio):Figura2D(etiqueta,color){
+	this->ratio=ratio;
+}
+
+Circulo::~Circulo() {
+	// TODO Auto-generated destructor stub
+}
+
+

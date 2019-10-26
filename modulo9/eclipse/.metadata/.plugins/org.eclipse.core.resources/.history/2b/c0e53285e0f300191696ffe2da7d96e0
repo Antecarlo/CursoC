@@ -1,0 +1,22 @@
+/*
+ * ExpResta.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EXPRESTA_H_
+#define EXPRESTA_H_
+
+#include "ExpresionBinaria.h"
+
+class ExpResta: public ExpresionBinaria {
+
+	double numero1,numero2;
+
+public:
+	ExpResta(double numero1=0, double numero2=0);
+	virtual ~ExpResta();
+};
+
+#endif /* EXPRESTA_H_ */

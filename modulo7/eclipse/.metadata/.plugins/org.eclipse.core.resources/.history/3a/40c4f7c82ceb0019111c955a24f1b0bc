@@ -1,0 +1,39 @@
+/*
+
+MAIN
+
+*/
+
+#include <iostream>
+#include <string>
+
+#include "number.h"
+#include "Hora.h"
+
+
+int main(){
+
+	Number<int>num(8);
+	Number<int>num2(18);
+
+	Number<int> r=num+num2;
+	std::cout << r.get() <<std::endl;
+
+	/*
+	Number<std::string>s(std::string("8"));
+	Number<std::string>s2(std::string("18"));
+	Number<std::string> r=s+s2;
+	*/
+
+	std::cout << num.get() << std::endl;
+	num.set(88);
+	std::cout << num.get() << std::endl;
+
+
+	//// HORAS
+
+	//Number<Hora>hora(14,26,8); //Asi construimos un objeto Number
+	Number<Hora>hora(Hora(14,26,8)); //Asi construimos un objeto Number
+
+
+}

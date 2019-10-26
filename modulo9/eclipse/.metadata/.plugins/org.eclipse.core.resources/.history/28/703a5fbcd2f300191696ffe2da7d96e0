@@ -1,0 +1,59 @@
+/*
+ * Coche.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef COCHE_H_
+#define COCHE_H_
+
+#include <memory>
+
+class Coche;
+#include "State.h"
+
+class Coche {
+
+	int combustible;
+	int velocidad;
+	std::shared_ptr<State> estado;
+
+public:
+	Coche(std::shared_ptr<State> inicio, int combustible=100, int velocidad=0);
+
+	void frenar();
+	void acelerar();
+	void contacto();
+	void modificarVelocidad(int valor){this->velocidad+=valor;}
+	void modificarCombustible(int valor){this->combustible+=valor;}
+	void imprimirEstado(){std::cout << "Estado:\n Velocidad:"<< this->velocidad<< "\nCombustible: "<<this->combustible<<std::endl;}
+
+	virtual ~Coche();
+
+	int getCombustible() const {
+		return combustible;
+	}
+
+	void setCombustible(int combustible) {
+		this->combustible = combustible;
+	}
+
+	const std::shared_ptr<State>& getEstado() const {
+		return estado;
+	}
+
+	void setEstado(const std::shared_ptr<State>& estado) {
+		this->estado = estado;
+	}
+
+	int getVelocidad() const {
+		return velocidad;
+	}
+
+	void setVelocidad(int velocidad) {
+		this->velocidad = velocidad;
+	}
+};
+
+#endif /* COCHE_H_ */

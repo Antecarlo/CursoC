@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;comportamiento_estrategia/Context.h&apos; to &apos;Contexto.h&apos;" description="Rename resource &apos;Context.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Context.h" name="Contexto.h" stamp="1571215982289" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;comportamiento_estrategia/Context.cpp&apos; to &apos;Contexto.cpp&apos;" description="Rename resource &apos;Context.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Context.cpp" name="Contexto.cpp" stamp="1571215991786" updateReferences="true"/>
+</session>

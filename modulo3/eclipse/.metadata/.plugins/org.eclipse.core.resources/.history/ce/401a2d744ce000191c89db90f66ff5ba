@@ -1,0 +1,48 @@
+/*
+ * Hora.h
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef HORA_H_
+#define HORA_H_
+
+class Hora {
+
+	int h,m,s;
+
+public:
+	Hora();
+	Hora(int horas, int minutos=0, int segundos=0);
+
+	void imprimir()const;
+
+	virtual ~Hora();
+
+	int getH() const {
+		return h;
+	}
+
+	void setH(int h) {
+		this->h = h;
+	}
+
+	int getM() const {
+		return m;
+	}
+
+	void setM(int m) {
+		this->m = m;
+	}
+
+	int getS() const {
+		return s;
+	}
+
+	void setS(int s) {
+		this->s = s;
+	}
+};
+
+#endif /* HORA_H_ */

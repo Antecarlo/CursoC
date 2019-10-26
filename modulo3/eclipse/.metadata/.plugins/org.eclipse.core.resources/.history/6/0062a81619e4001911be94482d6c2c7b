@@ -1,0 +1,16 @@
+/*
+ * triangulo.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "triangulo.h"
+
+triangulo::triangulo(std::string etiqueta,std::string color) {
+
+}
+
+triangulo::~triangulo() {
+	// TODO Auto-generated destructor stub
+}

@@ -1,0 +1,59 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+#include <iostream>
+#include "stdio.h"
+#include <string.h>
+#include <vector>
+#include <fstream>
+#include "Fichero.h"
+
+void readConfig(char * argv){
+
+	std::vector <std::string> questions;
+	std::string path_config;
+	path_config=argv+"_config.ini";
+
+	std::ifstream fich(this->path.c_str(),std::ios::in); //abrimos el fichero
+
+		if(!fich)
+			throw std::invalid_argument("The file "+this->path+" does not exist");
+
+		std::string linea;
+		char cad[1024];
+
+		if(!fich){
+			std::cout << "Error, no se encuentra el fichero" << std::endl;
+			std::exit(1);
+		}
+
+		while (fich.getline(cad,1024)){ //leemos lineas del fichero
+			linea=std::string(cad);
+			this->configuracion.insert(util::getColumnas(linea,'='));
+		}
+
+}
+
+int main(int argc, char *argv[]){
+
+	if(argc==2){
+		std::string end=".ini";
+		std::cout << argv[1]+end << std::endl;
+		Fichero fichero(argv[1]+end);
+		fichero.imprimirMapa();
+		readConfig(char * argv[1]);
+
+	}else{
+		std::cout << "Few arguments... :"<< argc << std::endl;
+
+	}
+
+
+
+}
+
+

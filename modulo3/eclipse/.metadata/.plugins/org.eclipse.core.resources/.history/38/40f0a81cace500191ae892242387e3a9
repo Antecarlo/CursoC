@@ -1,0 +1,17 @@
+/*
+ * Tablero.h
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TABLERO_H_
+#define TABLERO_H_
+
+class Tablero {
+public:
+	Tablero();
+	virtual ~Tablero();
+};
+
+#endif /* TABLERO_H_ */

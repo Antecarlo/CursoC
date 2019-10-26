@@ -1,0 +1,19 @@
+/*
+ * ServidorDedicado.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef SERVIDORDEDICADO_H_
+#define SERVIDORDEDICADO_H_
+
+#include "Operaciones.h"
+
+class ServidorDedicado: public Operaciones {
+public:
+	ServidorDedicado();
+	virtual ~ServidorDedicado();
+};
+
+#endif /* SERVIDORDEDICADO_H_ */

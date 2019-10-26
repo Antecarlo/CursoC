@@ -1,0 +1,59 @@
+/*
+ * Hora.cpp
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Hora.h"
+#include<iostream>
+#include<chrono>
+#include<ctime>
+
+Hora::Hora() {
+	time_t t;
+	struct tm * t_m;
+
+	t=time(0);
+	t_m=localtime(&t);
+
+	this->h=t_m->tm_hour;
+	this->m=t_m->tm_min;
+	this->s=t_m->tm_sec;
+}
+
+Hora::Hora(int horas, int minutos, int segundos) {
+	this->h=horas;
+	this->m=minutos;
+	this->s=segundos;
+}
+
+void Hora::imprimir() const {
+	std::cout << this->h <<":"<< this->m << ":" << this->s << std::endl;
+}
+
+void Hora::ajustar() {
+	if(s>59){
+		this->s=s;
+		this->m++;
+		this->ajustar();
+	}else if(m>59){
+		this->m=0;
+		this->h++;
+		this->ajustar();
+	}else if(h>23){
+		h=h-24;
+	}else{
+		//std::cout << "La hora esta ajustada" << std::endl;
+	}
+}
+
+void Hora::inc() {
+	this->s++;
+	this->ajustar();
+}
+
+Hora::~Hora() {
+	// TODO Auto-generated destructor stub
+}
+

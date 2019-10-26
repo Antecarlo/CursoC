@@ -1,0 +1,17 @@
+/*
+ * tipos.h
+ *
+ *  Created on: 15 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TIPOS_H_
+#define TIPOS_H_
+
+class tipos {
+public:
+	tipos();
+	virtual ~tipos();
+};
+
+#endif /* TIPOS_H_ */

@@ -1,0 +1,38 @@
+/*
+ * EnMarcha.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "EnMarcha.h"
+#include "Parado.h"
+
+#include <iostream>
+
+EnMarcha::EnMarcha(){
+}
+
+void EnMarcha::frenar(Coche &coche) {
+	std::cout << "Frenar en marcha" << std::endl;
+	if(coche.getVelocidad()==10)
+		coche.setEstado(std::shared_ptr<State>(new Parado()));
+	else
+		coche.setVelocidad(coche.getVelocidad()-10);
+
+}
+
+void EnMarcha::acelerar(Coche &coche) {
+	std::cout << "Acelerar en marcha" << std::endl;
+	coche.setVelocidad(coche.getVelocidad()+10);
+	coche.setCombustible(coche.getCombustible()-10);
+}
+
+void EnMarcha::contacto(Coche &coche) {
+	std::cout << "El estado se mantiene (contacto en marcha)" << std::endl;
+}
+
+EnMarcha::~EnMarcha() {
+	// TODO Auto-generated destructor stub
+}
+

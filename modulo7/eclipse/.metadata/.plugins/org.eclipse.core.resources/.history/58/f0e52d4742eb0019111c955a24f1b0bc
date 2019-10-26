@@ -1,0 +1,23 @@
+/*
+ * matriz.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef MATRIZ_H_
+#define MATRIZ_H_
+
+#include<vector>
+#include<memory>
+
+class matriz {
+
+	std::unique_ptr<std::unique_ptr <int []> []> m;
+
+public:
+	matriz();
+	virtual ~matriz();
+};
+
+#endif /* MATRIZ_H_ */

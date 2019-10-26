@@ -1,0 +1,24 @@
+/*
+ * Apagado.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef APAGADO_H_
+#define APAGADO_H_
+
+#include "State.h"
+
+class Apagado: public State {
+public:
+	Apagado();
+
+	void frenar();
+	void acelerar();
+	void contacto();
+
+	virtual ~Apagado();
+};
+
+#endif /* APAGADO_H_ */

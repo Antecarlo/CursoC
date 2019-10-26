@@ -1,0 +1,36 @@
+/*
+ * Academia.h
+ *
+ *  Created on: 9 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ACADEMIA_H_
+#define ACADEMIA_H_
+
+#include <vector>
+#include "Curso.h"
+#include "Seminario.h"
+
+class Academia {
+
+	std::vector<Curso> cursos;
+	std::vector<Seminario> seminarios;
+
+public:
+	Academia();
+	Academia(Curso curso, Seminario seminario);
+
+	//Metodos para crear y anyadir
+	void addCurso(Curso curso);
+	void addSeminario(Seminario seminario);
+
+	//Metodos para listar
+	void listarCursos(std::string tematica);
+	void listarSeminarios(std::string tematica);
+	void listarTodo();
+
+	virtual ~Academia();
+};
+
+#endif /* ACADEMIA_H_ */

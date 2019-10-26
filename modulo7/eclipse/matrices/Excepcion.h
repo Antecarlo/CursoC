@@ -1,0 +1,28 @@
+/*
+ * Excepcion.h
+ *
+ *  Created on: 9 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EXCEPCION_H_
+#define EXCEPCION_H_
+
+#include <stdexcept>
+
+class Excepcion : public std::exception{
+
+	std::string mensaje;
+
+public:
+	Excepcion(std::string mensaje);
+
+	virtual const char * what () const throw(){
+		return mensaje.c_str();
+	}
+
+	~Excepcion() throw();
+};
+
+#endif /* EXCEPCION_H_ */
+

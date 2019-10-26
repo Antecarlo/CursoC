@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include<iostream>
+#include "Sms.h"
+#include "Call.h"
+#include "Hora.h"
+#include "Fecha.h"
+
+
+void test_servicios(){
+	Sms sms(662589475,0.05,Fecha(1,15,2019),Hora(14,56,28));
+	Call call(625194865,0.05,Fecha(1,15,2019),Hora(14,56,28),Hora(15,0,0));
+	std::cout << sms << std::endl;
+	std::cout << call << std::endl;
+
+	}
+
+int main(){
+	test_servicios();
+
+}
+
+

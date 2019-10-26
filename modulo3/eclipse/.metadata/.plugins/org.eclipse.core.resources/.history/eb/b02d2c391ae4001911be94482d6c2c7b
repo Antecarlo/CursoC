@@ -1,0 +1,29 @@
+/*
+ * Esfera.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Esfera.h"
+#include "constantes.h"
+#include <iostream>
+
+
+Esfera::Esfera(std::string etiqueta,std::string color,double ratio):Figura3D(etiqueta,color) {
+	this->ratio=ratio;
+}
+
+void Esfera::dibujar() {
+	std::cout << "Esfera:" << this->getEtiqueta() << ", Color: "<< this->getColor()<< ", Radio: "<< this->ratio << std::endl;
+
+}
+
+double Esfera::volumen() {
+	return (4/3) * PI * ratio * ratio * ratio;
+}
+
+Esfera::~Esfera() {
+	// TODO Auto-generated destructor stub
+}
+

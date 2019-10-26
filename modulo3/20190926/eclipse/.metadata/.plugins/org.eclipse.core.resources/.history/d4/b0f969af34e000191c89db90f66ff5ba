@@ -1,0 +1,18 @@
+/*
+ * Punto2D.cpp
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Punto2D.h"
+
+Punto2D::Punto2D() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Punto2D::~Punto2D() {
+	// TODO Auto-generated destructor stub
+}
+

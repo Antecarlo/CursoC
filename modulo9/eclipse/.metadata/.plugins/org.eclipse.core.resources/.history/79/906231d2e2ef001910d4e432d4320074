@@ -1,0 +1,16 @@
+/*
+ * S10.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "S10.h"
+
+S10::S10(int numero): SmartPhone(numero) {
+}
+
+S10::~S10() {
+	// TODO Auto-generated destructor stub
+}
+

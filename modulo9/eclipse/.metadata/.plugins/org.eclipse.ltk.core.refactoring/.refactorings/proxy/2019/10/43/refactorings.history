@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;proxy/urls_restingidas&apos; to &apos;urls_restringidas&apos;" description="Rename resource &apos;urls_restingidas&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="urls_restingidas" name="urls_restringidas" stamp="1571654716366" updateReferences="true"/>
+</session>

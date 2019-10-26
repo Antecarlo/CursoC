@@ -1,0 +1,21 @@
+/*
+ * Main file
+ *
+ */
+
+#include "Hora.h"
+#include<iostream>
+
+int main(){
+
+	Hora horaActual;
+	Hora h1(9);
+	Hora h2(12,56);
+	Hora h3(3,45,23);
+
+	horaActual.imprimir();
+	h1.imprimir();
+	h2.imprimir();
+	h3.imprimir();
+
+}

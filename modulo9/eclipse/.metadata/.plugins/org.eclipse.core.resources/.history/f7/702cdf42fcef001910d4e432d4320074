@@ -1,0 +1,68 @@
+/*
+ * Context.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Contexto.h"
+#include "EstrategiaBurbuja.h"
+#include "EstrategiaDirecta.h"
+#include "EstrategiaSortCPP.h"
+
+
+
+#include <chrono>
+#include <thread>
+#include <iostream>
+
+Contexto::Contexto(int* numeros, int size): numeros(numeros),size(size) {
+}
+
+void Contexto::testEstrategias() {
+
+	//Obtener copia del array de numeros
+	int n = 10000000;
+	int copia [10000000];
+
+	std::copy(numeros,numeros+size,copia);
+	ordenar(new EstrategiaBurbuja(),copia,n, "BURBUJA");
+
+	std::copy(numeros,numeros+size,copia);
+	ordenar(new EstrategiaDirecta(),copia,n, "INSERCION DIRECTA");
+
+	std::copy(numeros,numeros+size,copia);
+	ordenar(new EstrategiaSortCPP(),copia,n, "SORT DE C++");
+
+	//copiar();
+	//ordenar();
+}
+
+void Contexto::ordenar(Estrategia * estrategia, int* array, int n, const char * metodo){
+	// Tomar tiempo
+    auto start = std::chrono::system_clock::now(); // This and "end"'s type is std::chrono::time_point
+
+    //Ordenar con la estrategia
+    estrategia->ordenar(array,n);
+
+    //Tomar tiempo
+    auto end = std::chrono::system_clock::now();
+
+	//Imprimir tiempo de ejecucion
+    std::chrono::duration<double> elapsed = end - start;
+    std::cout << metodo << ", Elapsed time: " << elapsed.count() << "s";
+}
+
+void Contexto::imprimir(int *copia, int n) {
+
+	for(int i=0;i<10 && i< n; i++)
+		std::cout << std::endl << "..."<< std::endl;
+
+	for(int i=n-10;i<n;i++)
+		std::cout << copia[i]<< std::endl;
+}
+
+Contexto::~Contexto() {
+	// TODO Auto-generated destructor stub
+}
+

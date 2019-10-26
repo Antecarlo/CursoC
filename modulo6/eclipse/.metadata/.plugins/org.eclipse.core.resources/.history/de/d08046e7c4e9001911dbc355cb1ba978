@@ -1,0 +1,17 @@
+/*
+ * Acertijos.h
+ *
+ *  Created on: 8 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ACERTIJOS_H_
+#define ACERTIJOS_H_
+
+class Acertijos {
+public:
+	Acertijos();
+	virtual ~Acertijos();
+};
+
+#endif /* ACERTIJOS_H_ */

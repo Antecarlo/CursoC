@@ -1,0 +1,18 @@
+/*
+ * ExpSuma.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ExpSuma.h"
+
+ExpSuma::ExpSuma() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ExpSuma::~ExpSuma() {
+	// TODO Auto-generated destructor stub
+}
+

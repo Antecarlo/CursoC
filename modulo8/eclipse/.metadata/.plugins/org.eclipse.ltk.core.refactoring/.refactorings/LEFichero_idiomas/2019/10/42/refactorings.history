@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;LEFichero_idiomas/config.ini&apos; to &apos;en.ini&apos;" description="Rename resource &apos;config.ini&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="config.ini" name="en.ini" stamp="1571055528272" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;LEFichero_idiomas/config2.ini&apos; to &apos;es.ini&apos;" description="Rename resource &apos;config2.ini&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="config2.ini" name="es.ini" stamp="1571055534608" updateReferences="true"/>
+</session>

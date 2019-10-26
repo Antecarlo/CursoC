@@ -1,0 +1,17 @@
+/*
+ * Cajero.h
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CAJERO_H_
+#define CAJERO_H_
+
+class Cajero {
+public:
+	Cajero();
+	virtual ~Cajero();
+};
+
+#endif /* CAJERO_H_ */

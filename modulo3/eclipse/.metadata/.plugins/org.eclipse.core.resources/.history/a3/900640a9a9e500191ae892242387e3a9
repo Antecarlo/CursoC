@@ -1,0 +1,30 @@
+/*
+ * Casilla.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Casilla.h"
+
+Casilla::Casilla(Coordenada coor, bool bomba): coor(coor),bomba(bomba) {
+}
+
+bool Casilla::isBomba() {
+	if(){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+void Casilla::vistaUser() {
+}
+
+void Casilla::vistaOculta() {
+}
+
+Casilla::~Casilla() {
+	// TODO Auto-generated destructor stub
+}
+

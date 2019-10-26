@@ -1,0 +1,24 @@
+/*
+ * JefeProyecto.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "JefeProyecto.h"
+
+
+
+JefeProyecto::JefeProyecto() {
+	// TODO Auto-generated constructor stub
+
+}
+
+JefeProyecto::JefeProyecto(std::string nombre, std::string apellidos,
+		float peso, float altura, double sueldo, std::string empresa,
+		std::string proyectos) {
+}
+
+JefeProyecto::~JefeProyecto() {
+	// TODO Auto-generated destructor stub
+}

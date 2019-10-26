@@ -1,0 +1,23 @@
+/*
+ * Fichero.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Fichero.h"
+
+#include <fstream>
+//#include <iostream>
+
+Fichero::Fichero(std::string path): path(path) {
+}
+
+void Fichero::leer() {
+	std::ifstream fich(this->path.c_str(),std::ios::in); //abrimos el fichero
+}
+
+Fichero::~Fichero() {
+	// TODO Auto-generated destructor stub
+}
+

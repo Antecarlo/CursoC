@@ -1,0 +1,25 @@
+/*
+ * FechaHora.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FechaHora.h"
+#include <iostream>
+
+FechaHora::FechaHora(int d, int M, int y, int h, int m, int s){
+	this->f = Fecha(d,M,y);
+	this->h = Hora(h,m,s);
+}
+
+FechaHora::FechaHora(Fecha fecha, Hora hora): f(fecha),h(hora) {
+}
+
+std::ostream & operator<<(std::ostream & os, const FechaHora & fh){
+	return os << fh.f << " "<< fh.h;
+}
+
+FechaHora::~FechaHora() {
+	// TODO Auto-generated destructor stub
+}

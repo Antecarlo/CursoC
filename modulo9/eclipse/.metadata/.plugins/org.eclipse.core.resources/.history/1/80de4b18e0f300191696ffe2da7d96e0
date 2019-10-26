@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include <memory>
+#include <iostream>
+
+#include "Expresion.h"
+#include "ExpresionNumerica.h"
+
+int main(){
+
+	std::shared_ptr<Expresion> p1 (new ExpresionNumerica(57));
+	std::shared_ptr<Expresion> p1 (new ExpresionNumerica(57));
+	std::shared_ptr<Expresion> p1 (new ExpresionNumerica(57));
+
+	std::shared_ptr<Expresion> p1 (new ExpresionNumerica(57));
+	std::shared_ptr<Expresion> p1 (new ExpresionNumerica(57));
+
+	std::cout << "Expresion: "<< resta->toString() << std::endl;
+	std::cout << "Resul: "<< resta->getValue() << std::endl;
+}
+
+
+

@@ -1,0 +1,127 @@
+/*
+ * Context.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Contexto.h"
+#include "EstrategiaBurbuja.h"
+#include "EstrategiaDirecta.h"
+#include "EstrategiaSortCPP.h"
+#include "constantes.h"
+
+
+#include <chrono>
+#include <thread>
+#include <iostream>
+
+Contexto::Contexto(int* numeros, int size): numeros(numeros),size(size) {
+}
+
+/*
+void Contexto::testEstrategias() {
+
+	//Obtener copia del array de numeros
+	int n = N;
+	int copia [n];
+
+	std::copy(numeros,numeros+size,copia);
+	ordenar(new EstrategiaBurbuja(),copia,n, "BURBUJA");
+
+	std::copy(numeros,numeros+size,copia);
+	ordenar(new EstrategiaDirecta(),copia,n, "INSERCION DIRECTA");
+
+	std::copy(numeros,numeros+size,copia);
+	ordenar(new EstrategiaSortCPP(),copia,n, "SORT DE C++");
+
+	//copiar();
+	//ordenar();
+}
+*/
+void Contexto::ordenar(){
+	double t[3];
+	double coste[3];
+
+	//ANALISIS DATOS PARA SELECCIONAR LA ESTRATEGIA:
+	t[0]= size*T_BURB_100000/N;
+	t[1]= size*T_DIRE_100000/N;
+	t[2]= size*T_SORT_100000/N;
+
+	coste[0]=t[0]/ES_BURB;
+	coste[1]=t[1]/ES_DIRE;
+	coste[2]=t[3]/ES_SORT;
+
+	//Calcular coste minimo para instanciar la estrategia adecuada:
+	algoritmos[0]=std::unique_ptr<Estrategia>(new EstrategiaBurbuja());
+
+
+}
+/*
+void Contexto::ordenar(){
+
+	//ANALISIS DE DATOS PARA SELECCIONAR LA ESTRATEGIA
+	float x,y,z,min;
+	x=(T_BURB_100000/N)*ES_BURB;
+	y=(T_DIRE_100000/N)*ES_DIRE;
+	z=(T_SORT_100000/N)*ES_SORT;
+
+	std::cout << "Coste burbuja - " << x << ", coste insercion directa - " << y << ", coste sort de c++ - "<< z;
+	min = ((x<y)? x:y)<z? ((x<y)? x:y):z;
+
+	if (min==x){
+		std::unique_ptr<Estrategia> sp = std::unique_ptr<EstrategiaBurbuja>(estrategia);
+		//Ordenar con la estrategia seleccionada
+		sp->ordenar(numeros,size);
+		std::cout << "Estrategia seleccionada: Burbuja" << std::endl;
+	}else if(min==y){
+		std::unique_ptr<Estrategia> sp = std::unique_ptr<EstrategiaDirecta>(estrategia);
+		sp->ordenar(numeros,size);
+		std::cout << "Estrategia seleccionada: Directa" << std::endl;
+	}else{
+		std::unique_ptr<Estrategia> sp = std::unique_ptr<EstrategiaSortCPP>(estrategia);
+		sp->ordenar(numeros,size);
+		std::cout << "Estrategia seleccionada: SortCPP" << std::endl;
+	}
+}
+*/
+/*
+void Contexto::ordenar(Estrategia * estrategia, int* array, int n, const char * metodo){
+
+	//ANALISIS DE DATOS PARA SELECCIONAR LA ESTRATEGIA
+
+	std::unique_ptr<Estrategia> sp = std::unique_ptr<Estrategia>(estrategia);
+	std::cout<<std::endl << "Inicio test: "<< metodo<< std::endl;
+
+	// Tomar tiempo
+    auto start = std::chrono::system_clock::now(); // This and "end"'s type is std::chrono::time_point
+
+    //Ordenar con la estrategia
+    sp->ordenar(array,n);
+
+    //Tomar tiempo
+    auto end = std::chrono::system_clock::now();
+
+	//Imprimir tiempo de ejecucion
+    std::chrono::duration<double> elapsed = end - start;
+    std::cout << metodo << ", Elapsed time: " << elapsed.count() << "s"<< std::endl;
+}
+*/
+
+void Contexto::imprimir(int *copia, int n) {
+
+	//Imprimir los diez primeros numeros
+	for(int i=0;i<10 && i< n; i++)
+		std::cout << copia[i]<< std::endl;
+
+	std::cout << std::endl << "..."<< std::endl;
+
+	//Imprimir los diez ultimos numeros
+	for(int i=n-10;i<n;i++)
+		std::cout << copia[i]<< std::endl;
+}
+
+Contexto::~Contexto() {
+	// TODO Auto-generated destructor stub
+}
+

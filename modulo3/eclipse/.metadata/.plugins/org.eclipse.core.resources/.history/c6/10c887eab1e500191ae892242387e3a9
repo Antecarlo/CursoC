@@ -1,0 +1,60 @@
+/*
+ * Tablero.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Tablero.h"
+
+Tablero::Tablero(int n, int numBombas): n(n),numBombas(numBombas){
+
+	//Construir tableros
+	this->construirTablero();
+
+	//Colocar bombas
+	this->colocarBombas();
+
+	//Calcular contador
+	this->calcularContador();
+
+}
+
+void Tablero::vistaJuego() {
+}
+
+void Tablero::vistaTraza() {
+}
+
+void Tablero::construirTablero() {
+
+	for (int i=0;i<this->n;i++){
+			std::vector<Casilla> fila;
+			for(int j=0; j<this->n;j++)
+				fila.push_back(Casilla(Coordenada(i,j),false,0));
+
+			this->tablero.push_back(fila);
+		}
+/*
+	for(int i=0; i<n; i++){
+		for(int j=0;j<n;j++)
+			(this->tablero[i][j]).setCoor(Coordenada(i,j));
+	}
+*/
+}
+
+void Tablero::colocarBombas() {
+	for(int i=0; i<n; i++){
+		for(int j=0;j<n;j++)
+			if((this->tablero[i][j]).isBomba())
+				(this->tablero[i][j]).setContador(BOMBA);
+	}
+}
+
+void Tablero::calcularContador() {
+}
+
+Tablero::~Tablero() {
+	// TODO Auto-generated destructor stub
+}
+

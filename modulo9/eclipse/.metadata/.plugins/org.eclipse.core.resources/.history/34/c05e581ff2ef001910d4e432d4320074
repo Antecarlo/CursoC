@@ -1,0 +1,20 @@
+/*
+ * EstrategiaSortCPP.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ESTRATEGIASORTCPP_H_
+#define ESTRATEGIASORTCPP_H_
+
+class EstrategiaSortCPP {
+public:
+	EstrategiaSortCPP();
+
+	void ordenar(int * array, int size);
+
+	virtual ~EstrategiaSortCPP();
+};
+
+#endif /* ESTRATEGIASORTCPP_H_ */

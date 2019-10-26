@@ -1,0 +1,23 @@
+/*
+ * Acertijos.cpp
+ *
+ *  Created on: 8 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Acertijos.h"
+
+Acertijos::Acertijos() {
+
+
+}
+
+void Acertijos::generarClave() {
+	std::string vocales= "AEIOU";
+	std::string consonantes = "";
+}
+
+Acertijos::~Acertijos() {
+	// TODO Auto-generated destructor stub
+}
+

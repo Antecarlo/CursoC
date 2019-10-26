@@ -1,0 +1,23 @@
+/*
+ * empleado.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef EMPLEADO_H_
+#define EMPLEADO_H_
+
+namespace std {
+namespace literals {
+
+class empleado {
+public:
+	empleado();
+	virtual ~empleado();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* EMPLEADO_H_ */

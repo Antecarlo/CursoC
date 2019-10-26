@@ -1,0 +1,30 @@
+13:53:19 **** Incremental Build of configuration Debug for project Buscaminas ****
+make all 
+Building file: ../Buscaminas.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Buscaminas.d" -MT"Buscaminas.o" -o "Buscaminas.o" "../Buscaminas.cpp"
+Finished building: ../Buscaminas.cpp
+ 
+Building file: ../Casilla.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Casilla.d" -MT"Casilla.o" -o "Casilla.o" "../Casilla.cpp"
+Finished building: ../Casilla.cpp
+ 
+Building file: ../Tablero.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Tablero.d" -MT"Tablero.o" -o "Tablero.o" "../Tablero.cpp"
+Finished building: ../Tablero.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Buscaminas
+Invoking: GCC C++ Linker
+g++  -o "Buscaminas"  ./Buscaminas.o ./Casilla.o ./Coordenada.o ./Jugador.o ./Tablero.o ./main.o   
+Finished building target: Buscaminas
+ 
+
+13:53:25 Build Finished. 0 errors, 0 warnings. (took 5s.320ms)
+

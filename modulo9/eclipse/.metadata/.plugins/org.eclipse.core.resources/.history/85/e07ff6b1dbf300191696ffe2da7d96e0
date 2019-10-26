@@ -1,0 +1,17 @@
+/*
+ * Expresion.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EXPRESION_H_
+#define EXPRESION_H_
+
+class Expresion {
+public:
+	Expresion();
+	virtual ~Expresion();
+};
+
+#endif /* EXPRESION_H_ */

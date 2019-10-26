@@ -1,0 +1,18 @@
+/*
+ * Persona.cpp
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Persona.h"
+
+Persona::Persona() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Persona::~Persona() {
+	// TODO Auto-generated destructor stub
+}
+

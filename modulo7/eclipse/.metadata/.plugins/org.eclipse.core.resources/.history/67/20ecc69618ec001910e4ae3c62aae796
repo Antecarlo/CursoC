@@ -1,0 +1,24 @@
+/*
+ * Tarjeta.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Tarjeta.h"
+
+Tarjeta::Tarjeta() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Tarjeta::Tarjeta(int numero, int pin) {
+}
+
+bool Tarjeta::operator ==(const Tarjeta& t) {
+}
+
+Tarjeta::~Tarjeta() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,43 @@
+/*
+ * Vector.cpp
+ *
+ *  Created on: 27 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Vector.h"
+#include <iostream>
+
+namespace std {
+namespace literals {
+
+Vector::Vector(int tama=10) {
+	this->size=tama;
+	this->numeros=new int[tama];
+	this->cont=0; //Posicion libre que tenemos
+}
+
+void Vector::imprimir() {
+	for(int i=0;i<this->cont;i++){
+		std::cout << i <<": "<<this->numeros[i] << std::endl;
+		std::cout << std::endl;
+	}
+}
+
+bool Vector::add(int num) {
+	if(this->cont<this->size){
+		this->numeros[this->cont]=num;
+		this->cont++;
+		return true;
+	}else{
+		//std::cout << "El numero no se puede añadir" << std::endl;
+		return false;
+	}
+}
+
+Vector::~Vector() {
+	delete [] this->numeros;
+}
+
+} /* namespace literals */
+} /* namespace std */

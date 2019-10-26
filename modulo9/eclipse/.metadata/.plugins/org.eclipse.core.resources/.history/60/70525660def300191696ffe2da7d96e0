@@ -1,0 +1,25 @@
+/*
+ * ExpresionBinaria.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EXPRESIONBINARIA_H_
+#define EXPRESIONBINARIA_H_
+
+#include "Expresion.h"
+#include "Expresion.h"
+
+#include <memory>
+
+class ExpresionBinaria: public Expresion {
+
+	std::shared_ptr<Expresion>
+
+public:
+	ExpresionBinaria(int numero1=0,int numero2=0);
+	virtual ~ExpresionBinaria();
+};
+
+#endif /* EXPRESIONBINARIA_H_ */

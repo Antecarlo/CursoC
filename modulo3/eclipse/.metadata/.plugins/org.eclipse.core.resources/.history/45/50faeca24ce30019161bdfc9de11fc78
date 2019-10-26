@@ -1,0 +1,30 @@
+/*
+ * Empleado.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef EMPLEADO_H_
+#define EMPLEADO_H_
+
+#include "Persona.h"
+#include<string>
+
+namespace std {
+namespace literals {
+
+class Empleado: public Persona {//El modificador public hay que ponerlo delante de cada clase
+
+	double sueldo;
+	std::string empresa;
+
+public:
+	Empleado();
+	virtual ~Empleado();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* EMPLEADO_H_ */

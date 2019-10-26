@@ -1,0 +1,52 @@
+/*
+ * Hora.h
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include<iostream>
+
+#ifndef HORA_H_
+#define HORA_H_
+
+class Hora{
+
+	int h,m,s;
+	void ajustar(); //La clase Hora sola se ajusta
+
+public:
+	Hora();
+	Hora(int horas, int minutos=0, int segundos=0);
+
+	void imprimir()const;
+	void inc();
+
+	Hora(std::string hora);
+	Hora(double d);
+
+	Hora operator+(const Hora& hora);
+	Hora operator++(); //Pre
+	Hora operator++(int); //Post
+	bool operator<(const Hora & hora) const;
+	bool operator>(const Hora & hora);
+
+	long segundos() const;
+
+	//Friend functions
+	friend bool operator==(const Hora & hora,const Hora & hora2);
+	friend std::ostream & operator<<(std::ostream & os, const Hora & hora);
+	friend std::istream & operator>>(std::istream & is,Hora & hora);
+
+	// Getters and setters
+	int getH() const {return h;}
+	void setH(int h) {this->h = h;}
+	int getM() const {return m;}
+	void setM(int m) {this->m = m;}
+	int getS() const {return s;}
+	void setS(int s) {this->s = s;}
+
+	virtual ~Hora();
+};
+
+#endif /* HORA_H_ */

@@ -1,0 +1,21 @@
+/*
+ * EstrategiaDirecta.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "EstrategiaDirecta.h"
+
+EstrategiaDirecta::EstrategiaDirecta() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void EstrategiaDirecta::ordenar(int* array, int n) {
+}
+
+EstrategiaDirecta::~EstrategiaDirecta() {
+	// TODO Auto-generated destructor stub
+}
+

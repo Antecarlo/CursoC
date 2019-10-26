@@ -1,0 +1,18 @@
+/*
+ * Proxy.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Proxy.h"
+
+Proxy::Proxy() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Proxy::~Proxy() {
+	// TODO Auto-generated destructor stub
+}
+

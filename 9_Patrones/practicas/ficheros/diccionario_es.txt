@@ -1,0 +1,5 @@
+key_nombre=nombre
+key_apellido=apellido
+key_edad=edad
+key_direccion=direccion
+key_ciudad=ciudad

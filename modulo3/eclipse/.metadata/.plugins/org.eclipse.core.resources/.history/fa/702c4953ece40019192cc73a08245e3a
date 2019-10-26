@@ -1,0 +1,30 @@
+/*
+ * Cliente.h
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CLIENTE_H_
+#define CLIENTE_H_
+
+#include <iostream>
+#include "Tarifa.h"
+
+
+class Cliente {
+
+	friend	std::ostream & operator <<(std::ostream & os, const Cliente & c);
+
+	std::string nombre;
+	std::string apellidos;
+	long numero;
+	Tarifa tarifa;
+
+public:
+	Cliente(Tarifa tarifa,std::string nombre="",std::string apellidos="",long numero=0);
+	virtual ~Cliente();
+};
+
+
+#endif /* CLIENTE_H_ */

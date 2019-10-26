@@ -1,0 +1,6 @@
+12:46:53 **** Incremental Build of configuration Debug for project factura_llamadas ****
+make all 
+make: No se hace nada para 'all'.
+
+12:46:54 Build Finished. 0 errors, 0 warnings. (took 851ms)
+

@@ -1,0 +1,25 @@
+/*
+ * Figura2D.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef FIGURA2D_H_
+#define FIGURA2D_H_
+
+#include "Figura.h"
+
+namespace std {
+namespace literals {
+
+class Figura2D: public Figura {
+public:
+	Figura2D();
+	virtual ~Figura2D();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* FIGURA2D_H_ */

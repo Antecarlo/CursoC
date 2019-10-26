@@ -1,0 +1,33 @@
+/*
+ * OperacionesIO.cpp
+ *
+ *  Created on: 15 oct. 2019
+ *      Author: antonio
+ */
+
+#include "OperacionesIO.h"
+#include <fstream>
+
+OperacionesIO::OperacionesIO() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void OperacionesIO::cargarCuentas(std::map<int, Cuenta>& cuentas) {
+		Cuenta cuenta;
+		std::ifstream fich("datos.bin", std::ios::binary | std::ios::app);
+			if(!fich){
+				std::cout << "error al crear el fichero" << std::endl;
+				return; //break
+			}
+		while(fich.read(reinterpret_cast<char *>(& cuenta),sizeof(TCuenta))){
+			imprimirCuenta(cuenta);
+		}
+		fich.close();
+	}
+}
+
+OperacionesIO::~OperacionesIO() {
+	// TODO Auto-generated destructor stub
+}
+

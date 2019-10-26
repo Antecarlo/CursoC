@@ -1,0 +1,17 @@
+/*
+ * Punto2D.h
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef PUNTO2D_H_
+#define PUNTO2D_H_
+
+class Punto2D {
+public:
+	Punto2D();
+	virtual ~Punto2D();
+};
+
+#endif /* PUNTO2D_H_ */

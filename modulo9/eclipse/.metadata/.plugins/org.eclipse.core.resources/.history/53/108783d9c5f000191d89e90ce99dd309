@@ -1,0 +1,18 @@
+/*
+ * Estilo.cpp
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Estilo.h"
+
+Estilo::Estilo() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Estilo::~Estilo() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,23 @@
+/*
+ * tiempo.h
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef TIEMPO_H_
+#define TIEMPO_H_
+
+namespace std {
+namespace literals {
+
+class tiempo {
+public:
+	tiempo();
+	virtual ~tiempo();
+};
+
+} /* namespace literals */
+} /* namespace std */
+
+#endif /* TIEMPO_H_ */

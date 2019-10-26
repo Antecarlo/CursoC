@@ -1,0 +1,27 @@
+/*
+ * FactoriaFlyWeight.cpp
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FactoriaFlyWeight.h"
+
+FactoriaFlyWeight::FactoriaFlyWeight(Estilo estilo) {
+	this->estilos.insert(estilo.getCodigo());
+
+}
+
+FactoriaFlyWeight::FactoriaFlyWeight(Estilo estilo) {
+}
+
+int FactoriaFlyWeight::buscarEstilo(Estilo e) {
+}
+
+void FactoriaFlyWeight::imprimir() {
+}
+
+FactoriaFlyWeight::~FactoriaFlyWeight() {
+	// TODO Auto-generated destructor stub
+}
+

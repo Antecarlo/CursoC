@@ -1,0 +1,5 @@
+key_nombre=name
+key_apellido=surname
+key_edad=age
+key_direccion=address
+key_ciudad=city

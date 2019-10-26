@@ -1,0 +1,23 @@
+/*
+ * Programador.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Programador.h"
+
+namespace std {
+namespace literals {
+
+Programador::Programador() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Programador::~Programador() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

@@ -1,0 +1,22 @@
+/*
+ * IPhoneX.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef IPHONEX_H_
+#define IPHONEX_H_
+
+#include "SmartPhone.h"
+
+class IPhoneX {
+public:
+	IPhoneX();
+
+	void llamar();
+
+	virtual ~IPhoneX();
+};
+
+#endif /* IPHONEX_H_ */

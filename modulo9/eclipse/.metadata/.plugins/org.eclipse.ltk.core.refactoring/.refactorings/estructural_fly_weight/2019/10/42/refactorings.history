@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;estructural_fly_weight/tipos.h&apos; to &apos;Tipos.h&apos;" description="Rename resource &apos;tipos.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tipos.h" name="Tipos.h" stamp="1571306654220" updateReferences="true"/>
+</session>

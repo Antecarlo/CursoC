@@ -1,0 +1,33 @@
+/*
+ * Agenda.h
+ *
+ *  Created on: 4 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef AGENDA_H_
+#define AGENDA_H_
+
+#include<map>
+#include<string>
+#include<iostream>
+
+#include "Fecha.h"
+#include "Hora.h"
+
+class Agenda {
+
+	std::map<Fecha,std::map<Hora,std::string>> eventos;
+	bool operator<(const Agenda & agenda);
+
+public:
+	Agenda();
+
+	void addEvento(Fecha fecha, Hora hora, std::string evento);
+	void listar();
+	void listr(Fecha fecha); //Listar todos los eventos de un dia
+
+	virtual ~Agenda();
+};
+
+#endif /* AGENDA_H_ */

@@ -1,0 +1,18 @@
+/*
+ * LeerEscribir.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "LeerEscribir.h"
+
+LeerEscribir::LeerEscribir() {
+	// TODO Auto-generated constructor stub
+
+}
+
+LeerEscribir::~LeerEscribir() {
+	// TODO Auto-generated destructor stub
+}
+

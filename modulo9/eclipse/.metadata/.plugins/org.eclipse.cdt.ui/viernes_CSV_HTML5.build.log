@@ -1,0 +1,6 @@
+12:39:34 **** Incremental Build of configuration Debug for project viernes_CSV_HTML5 ****
+make all 
+make: No se hace nada para 'all'.
+
+12:39:34 Build Finished. 0 errors, 0 warnings. (took 554ms)
+

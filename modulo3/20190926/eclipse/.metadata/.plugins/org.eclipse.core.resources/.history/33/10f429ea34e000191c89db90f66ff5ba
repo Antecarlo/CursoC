@@ -1,0 +1,25 @@
+/*
+ * Punto2D.cpp
+ *
+ *  Created on: 26 sept. 2019
+ *      Author: antonio
+ */
+
+#include "Punto2D.h"
+
+Punto2D::Punto2D(int x, int y) {
+}
+
+float Punto2D::distancia(const Punto2D& p) const{
+}
+
+void Punto2D::imprimir() const {
+}
+
+Punto2D Punto2D::masCercano(Punto2D* nube, int n) {
+}
+
+Punto2D::~Punto2D() {
+	// TODO Auto-generated destructor stub
+}
+

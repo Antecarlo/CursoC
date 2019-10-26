@@ -1,0 +1,21 @@
+/*
+ * AgendaException.cpp
+ *
+ *  Created on: 7 oct. 2019
+ *      Author: antonio
+ */
+
+#include "AgendaException.h"
+
+AgendaException::AgendaException() {
+	// TODO Auto-generated constructor stub
+
+}
+
+const char* AgendaException::what() const throw () {
+}
+
+AgendaException::~AgendaException() {
+	// TODO Auto-generated destructor stub
+}
+

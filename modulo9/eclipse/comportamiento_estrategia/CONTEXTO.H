@@ -1,0 +1,31 @@
+/*
+ * Context.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CONTEXTO_H_
+#define CONTEXTO_H_
+
+#include <memory>
+#include "Estrategia.h"
+
+class Contexto {
+
+	std::unique_ptr<Estrategia> estrategia;
+	int * numeros;
+	int size;
+
+public:
+	Contexto(int *  ,int);
+
+	//void testEstrategias();
+	//void ordenar(Estrategia * , int*, int, const char *);
+	void ordenar();
+	void imprimir(int *, int);
+
+	virtual ~Contexto();
+};
+
+#endif /* CONTEXTO_H_ */

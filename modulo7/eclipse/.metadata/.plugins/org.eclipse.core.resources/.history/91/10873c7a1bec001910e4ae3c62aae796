@@ -1,0 +1,22 @@
+/*
+ * Banco.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Banco.h"
+
+Banco::Banco(std::string nombre): nombre(nombre) {}
+
+Cuenta Banco::getCuenta(int numero) {
+	return this->cuentas.at(numero);
+}
+
+void Banco::listarCuentas() {
+}
+
+Banco::~Banco() {
+	// TODO Auto-generated destructor stub
+}
+

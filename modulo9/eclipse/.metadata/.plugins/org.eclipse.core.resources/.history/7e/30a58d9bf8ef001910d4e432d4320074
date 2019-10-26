@@ -1,0 +1,41 @@
+/*
+ * Context.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Contexto.h"
+#include <chrono>
+#include <thread>
+
+Contexto::Contexto(int* numeros, int size): numeros(numeros),size(size) {
+}
+
+void Contexto::testEstrategias() {
+
+	//Obtener copia del array de numeros
+}
+
+void ordenar(Estrategia * estrategia){
+	// Tomar tiempo
+    auto start = std::chrono::system_clock::now(); // This and "end"'s type is std::chrono::time_point
+
+    //Ordenar con la estrategia
+
+
+    //Tomar tiempo
+    auto end = std::chrono::system_clock::now();
+
+	//Imprimir tiempo de ejecucion
+
+
+}
+
+void Contexto::imprimir() {
+}
+
+Contexto::~Contexto() {
+	// TODO Auto-generated destructor stub
+}
+

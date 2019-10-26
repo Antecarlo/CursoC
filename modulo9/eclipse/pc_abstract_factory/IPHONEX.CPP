@@ -1,0 +1,22 @@
+/*
+ * IPhoneX.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "IPhoneX.h"
+#include <iostream>
+
+IPhoneX::IPhoneX(int numero): SmartPhone(numero) {
+	// TODO Auto-generated constructor stub
+}
+
+void IPhoneX::llamar() {
+	std::cout << "Llamar con IPhoneX. Numero: " <<this->numero<< std::endl;
+}
+
+IPhoneX::~IPhoneX() {
+	// TODO Auto-generated destructor stub
+}
+

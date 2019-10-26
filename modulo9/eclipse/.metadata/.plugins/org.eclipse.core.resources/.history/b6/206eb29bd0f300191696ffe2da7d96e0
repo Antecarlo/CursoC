@@ -1,0 +1,35 @@
+/*
+ * Parado.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Parado.h"
+#include "Apagado.h"
+#include "EnMarcha.h"
+
+#include <iostream>
+
+
+Parado::Parado(){
+}
+
+void Parado::frenar(Coche &coche) {
+	std::cout << "El estado se mantiene (frenar en parado)" << std::endl;
+}
+
+void Parado::acelerar(Coche &coche) {
+	std::cout << "Acelerar en parado" << std::endl;
+	coche.setEstado(std::shared_ptr<State>(new EnMarcha()));
+}
+
+void Parado::contacto(Coche &coche) {
+	std::cout << "Contacto en parado" << std::endl;
+	coche.setEstado(std::shared_ptr<State>(new Apagado()));
+}
+
+Parado::~Parado() {
+	// TODO Auto-generated destructor stub
+}
+

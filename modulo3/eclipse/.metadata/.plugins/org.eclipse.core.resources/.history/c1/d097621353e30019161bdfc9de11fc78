@@ -1,0 +1,20 @@
+/*
+ * Programador.h
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef PROGRAMADOR_H_
+#define PROGRAMADOR_H_
+
+#include "Empleado.h"
+
+class Programador: public Empleado {
+public:
+	Programador();
+	virtual ~Programador();
+};
+
+
+#endif /* PROGRAMADOR_H_ */

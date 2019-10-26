@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>EJEMPLO</title>
+</head>
+<body>
+<table>
+<tr>
+<td>Miguel</td>
+<td>45</td>
+</tr>
+<tr>
+<td>Jorge</td>
+<td>34</td>
+</tr>
+<tr>
+<td>Julia</td>
+<td>23</td>
+</tr>
+</body>
+</html>

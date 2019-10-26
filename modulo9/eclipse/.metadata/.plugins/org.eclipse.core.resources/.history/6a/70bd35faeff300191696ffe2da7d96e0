@@ -1,0 +1,38 @@
+/*
+ * Proxy.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Proxy.h"
+#include "Servidor.h"
+
+#include <fstream>
+#include <stdexcept>
+
+Proxy::Proxy() {
+	// TODO Auto-generated constructor stub
+}
+
+void Proxy::descargarURL(std::string url) {
+	std::ifstream fich("./urls_restringidas",std::ios::in);  //Fichero abierto
+	Servidor s;
+
+	if(!fich)
+		throw std::invalid_argument("El fichero no existe");
+
+	std::string linea;
+	char cad[1024];
+
+	while(fich.getline(cad,1024)){
+		linea=std::string(cad);
+		if(url.compare(linea)==0)
+			s.descargarURL(url);
+	}
+}
+
+Proxy::~Proxy() {
+	// TODO Auto-generated destructor stub
+}
+

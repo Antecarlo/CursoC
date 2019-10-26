@@ -1,0 +1,37 @@
+/*
+ * Main file
+ *
+ */
+
+#include "Hora.h"
+#include "Fecha.h"
+#include "FechaHora.h"
+
+#include<iostream>
+#include<list>
+#include<vector>
+#include<algorithm>
+
+void imprimir(std::list<Fecha> v){
+	for (auto i:v)
+		std::cout << i << " ";
+	std::cout << std::endl;
+}
+
+void ordenarListaFechaHoras(){
+	//std::list<Fecha> fechas = {{4,1,2020},{6,7,2019},{8,9,2002}};
+	std::list<Fecha> fechas;
+	fechas.push_back(Fecha(4,1,2020));
+	fechas.push_back(Fecha(6,7,2019));
+	fechas.push_back(Fecha(8,9,2002));
+	imprimir(fechas);
+
+	//fechas.sort();
+	std::sort(fechas);
+	imprimir(fechas);
+}
+
+int main(){
+	ordenarListaFechaHoras();
+
+}

@@ -1,0 +1,29 @@
+/*
+ * Cuenta.h
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CUENTA_H_
+#define CUENTA_H_
+
+#include <vector>
+
+#include "Cliente.h"
+#include "Movimiento.h"
+#include "Tarjeta.h"
+
+class Cuenta {
+
+	Cliente cliente;
+	Tarjeta tarjeta;
+	std::vector<Movimiento> movimientos;
+	double saldo;
+
+public:
+	Cuenta(Cliente cliente);
+	virtual ~Cuenta();
+};
+
+#endif /* CUENTA_H_ */

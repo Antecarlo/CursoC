@@ -1,0 +1,16 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FechaHora.h"
+#include "Fecha.h"
+#include "Hora.h"
+
+int main(){
+
+FechaHora fh(23,9,1996,10,40,16);
+
+}

@@ -1,0 +1,22 @@
+/*
+ * ExpresionNumerica.h
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef EXPRESIONNUMERICA_H_
+#define EXPRESIONNUMERICA_H_
+
+#include "Expresion.h"
+
+class ExpresionNumerica: public Expresion {
+
+	std::shared_ptr<Expresion> expresion1;
+
+public:
+	ExpresionNumerica(int numero);
+	virtual ~ExpresionNumerica();
+};
+
+#endif /* EXPRESIONNUMERICA_H_ */

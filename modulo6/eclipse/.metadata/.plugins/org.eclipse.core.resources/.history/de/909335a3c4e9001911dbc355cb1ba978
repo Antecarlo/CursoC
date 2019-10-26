@@ -1,0 +1,19 @@
+/*
+ * Palabra.cpp
+ *
+ *  Created on: 8 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Palabra.h"
+#include <csrand>
+
+Palabra::Palabra() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Palabra::~Palabra() {
+	// TODO Auto-generated destructor stub
+}
+

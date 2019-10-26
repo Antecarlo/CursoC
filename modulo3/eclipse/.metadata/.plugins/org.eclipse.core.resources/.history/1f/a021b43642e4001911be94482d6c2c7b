@@ -1,0 +1,19 @@
+/*
+ * Call.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Call.h"
+
+
+Call::Call() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Call::~Call() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,31 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14 oct. 2019
+ *      Author: antonio
+ */
+
+
+#include <iostream>
+#include <fstream>
+#include "util.h"
+
+void leerCSV(){
+	std::ifstream fich("./datos.csv",std::ios::in);
+	char cad[1024];
+
+	if(!fich){
+		std::cout << "Error, no se encuentra el fichero" << std::endl;
+		std::exit(1);
+	}
+
+	while(fich.getline(cad,1024)){
+		std::cout << linea << std::endl;
+	}
+	fich.close();
+}
+
+
+int main(){
+ leerCSV();
+}

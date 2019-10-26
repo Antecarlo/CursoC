@@ -1,0 +1,18 @@
+/*
+ * Buscaminas.cpp
+ *
+ *  Created on: 3 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Buscaminas.h"
+
+Buscaminas::Buscaminas() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Buscaminas::~Buscaminas() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,6 @@
+09:42:22 **** Incremental Build of configuration Debug for project figuras ****
+make all 
+make: No se hace nada para 'all'.
+
+09:42:23 Build Finished. 0 errors, 0 warnings. (took 550ms)
+

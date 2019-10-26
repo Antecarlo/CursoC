@@ -1,0 +1,6 @@
+11:47:55 **** Incremental Build of configuration Debug for project composicion_fecha_hora ****
+make all 
+make: No se hace nada para 'all'.
+
+11:47:56 Build Finished. 0 errors, 0 warnings. (took 536ms)
+

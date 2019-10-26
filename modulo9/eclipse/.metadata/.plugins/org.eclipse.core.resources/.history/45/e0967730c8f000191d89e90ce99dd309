@@ -1,0 +1,32 @@
+/*
+ * Estilo.cpp
+ *
+ *  Created on: 17 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Estilo.h"
+
+#include <string>
+
+Estilo::Estilo(bool negrita,TLetra tletra,TColor color, int size): negrita(negrita),tipoletra(tletra), size(size), color(color){
+	// TODO Auto-generated constructor stub
+
+}
+
+int Estilo::getCodigo() {
+	char codigo[50];
+
+	std::sprintf(codigo, "%d%d%02d%d",tipoletra,color,size,(negrita)?1:0);
+	std::string aux= std::string()
+
+}
+
+void Estilo::imprimir() {
+
+}
+
+Estilo::~Estilo() {
+	// TODO Auto-generated destructor stub
+}
+

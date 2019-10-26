@@ -1,0 +1,18 @@
+/*
+ * Parado.cpp
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Parado.h"
+
+Parado::Parado() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Parado::~Parado() {
+	// TODO Auto-generated destructor stub
+}
+

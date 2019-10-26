@@ -1,0 +1,19 @@
+/*
+ * ExpResta.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ExpResta.h"
+
+ExpResta::ExpResta(std::shared_ptr<Expresion> expresion1,std::shared_ptr<Expresion> expresion2){
+
+
+
+}
+
+ExpResta::~ExpResta() {
+	// TODO Auto-generated destructor stub
+}
+

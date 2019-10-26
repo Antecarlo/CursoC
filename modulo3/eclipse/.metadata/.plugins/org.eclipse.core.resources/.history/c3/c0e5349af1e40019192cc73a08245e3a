@@ -1,0 +1,49 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include<iostream>
+#include<memory>
+
+#include "Sms.h"
+#include "Call.h"
+#include "CallI.h"
+#include "Hora.h"
+#include "Fecha.h"
+#include "Cliente.h"
+#include "Tarifa.h"
+#include "Factura.h"
+
+
+void test_servicios(){
+	Sms sms(662589475,0.05,Fecha(1,15,2019),Hora(14,56,28));
+	Call call(625194865,0.05,Fecha(1,15,2019),Hora(14,56,28),Hora(15,0,0));
+	CallI callI(625194865,1.2,0.05,Fecha(1,15,2019),Hora(14,56,28),Hora(15,0,0));
+	std::cout << sms << std::endl;
+	std::cout << call << std::endl;
+	std::cout << callI << std::endl;
+	}
+
+void test_factura(){
+	Tarifa tarifa;
+	Cliente cliente(tarifa,"Sara","Casado Lopez",628597484);
+	Factura factura(Fecha(23,9,1998),2,cliente);
+
+
+	factura.addServicio(std::make_unique<Sms>(645918785,cliente.getTarifa().getImporteSms(),Fecha(25,9,1654,Hora(20,20,20))));
+	factura.addServicio(std::make_unique<Call>(648475123,cliente.getTarifa().getImporteSgCall(),Fecha(25,9,1654,Hora(20,20,20),Hora(20,22,21))));
+	factura.addServicio(std::make_unique<Sms>(645918785,cliente.getTarifa().getImporteSms(),Fecha(25,9,1654,Hora(20,20,20))));
+
+
+	factura.imprimir();
+}
+
+int main(){
+	//test_servicios();
+	test_factura();
+}
+
+

@@ -1,0 +1,20 @@
+/*
+ * Cliente.cpp
+ *
+ *  Created on: 11 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Cliente.h"
+
+Cliente::Cliente(std::string nombre,int telefono): nombre(nombre),telefono(telefono) {
+	// TODO Auto-generated constructor stub
+
+}
+
+Cliente::~Cliente() {
+	// TODO Auto-generated destructor stub
+}
+
+void Cliente::imprimir() {
+}

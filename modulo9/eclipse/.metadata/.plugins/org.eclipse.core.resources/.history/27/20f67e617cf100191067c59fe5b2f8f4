@@ -1,0 +1,18 @@
+/*
+ * ListDir.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef LISTDIR_H_
+#define LISTDIR_H_
+
+class ListDir {
+public:
+	ListDir();
+	std::vector<std::string> getCSV(std::String origen);
+	virtual ~ListDir();
+};
+
+#endif /* LISTDIR_H_ */

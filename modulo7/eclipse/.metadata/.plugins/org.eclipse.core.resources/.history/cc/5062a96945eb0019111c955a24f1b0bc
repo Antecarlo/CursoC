@@ -1,0 +1,45 @@
+/*
+ * matriz.cpp
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Matriz.h"
+
+Matriz::Matriz(int filas, int col, int val) {
+
+	this->filas=filas;
+	this->col=col;
+
+	//Primero crear el array de fuera:
+	//Hazme [filas] punteros unique de tipo int []
+	this->datos=std::make_unique<std::unique_ptr<int []>[]>(this->filas);
+	std::make_unique<>(col);
+	for(int i=0;i<col;i++)
+		this->datos[]
+}
+
+bool Matriz::checkSuma(const Matriz& m) {
+}
+
+bool Matriz::checkMul(const Matriz& m) {
+}
+
+void Matriz::set(int fila, int col, int val) {
+}
+
+int Matriz::get(int fila, int col) {
+	return this->datos[fila][col];
+}
+
+Matriz Matriz::operator +(const Matriz& m) {
+}
+
+Matriz Matriz::operator *(const Matriz& m) {
+}
+
+Matriz::~Matriz() {
+	// TODO Auto-generated destructor stub
+}
+

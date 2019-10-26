@@ -1,0 +1,47 @@
+/*
+ * Coordenada.h
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef COORDENADA_H_
+#define COORDENADA_H_
+
+#include<iostream>
+#include <vector>
+
+class Coordenada {
+
+	int fil,col;
+	friend std::istream & operator >> (std::istream & is, Coordenada & c);
+	friend std::ostream & operator << (std::ostream & os, const Coordenada & c);
+
+public:
+	Coordenada(int fila=0, int columna=0);
+
+	static Coordenada getAleatorio (int nMax);
+	static std::vector <Coordenadas> getCoordenadasAleatorias(int numCoordenadas,int nMax);
+
+	bool operator ==(const Coordenada & c);
+
+	int getCol() const {
+		return col;
+	}
+
+	void setCol(int col) {
+		this->col = col;
+	}
+
+	int getFil() const {
+		return fil;
+	}
+
+	void setFil(int fil) {
+		this->fil = fil;
+	}
+
+	virtual ~Coordenada();
+};
+
+#endif /* COORDENADA_H_ */

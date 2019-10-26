@@ -1,0 +1,23 @@
+/*
+ * tiempo.cpp
+ *
+ *  Created on: 1 oct. 2019
+ *      Author: antonio
+ */
+
+#include "tiempo.h"
+
+namespace std {
+namespace literals {
+
+tiempo::tiempo() {
+	// TODO Auto-generated constructor stub
+
+}
+
+tiempo::~tiempo() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace literals */
+} /* namespace std */

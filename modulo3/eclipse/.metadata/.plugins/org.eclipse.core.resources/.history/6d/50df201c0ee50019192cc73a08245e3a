@@ -1,0 +1,31 @@
+/*
+ * Coordenada.cpp
+ *
+ *  Created on: 2 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Coordenada.h"
+
+Coordenada::Coordenada(int fila, int columna): fil(fila),col(columna) {
+}
+
+Coordenada Coordenada::getAleatorio(int nMax) {
+}
+
+bool Coordenada::operator ==(const Coordenada& c) {
+	return this->fil == c.fil && this->col == c.col;
+}
+
+std::istream & operator >> (std::istream & is, Coordenada & c){
+	return is >> c.fil >> c.col;
+}
+
+std::ostream & operator << (std::ostream & is, const Coordenada & c){
+	return os << c.fil << c.col;
+
+}
+
+Coordenada::~Coordenada() {
+	// TODO Auto-generated destructor stub
+}

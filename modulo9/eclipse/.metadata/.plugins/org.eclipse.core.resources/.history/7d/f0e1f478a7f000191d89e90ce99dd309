@@ -1,0 +1,33 @@
+/*
+ * FactoriaPrototipos.cpp
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#include "FactoriaPrototipos.h"
+#include "Circulo.h"
+#include "Cilindro.h"
+#include "Triangulo.h"
+#include "Esfera.h"
+
+
+FactoriaPrototipos::FactoriaPrototipos() {
+	this->inicializarPrototipos();
+}
+
+void FactoriaPrototipos::inicializarPrototipos() {
+
+	std::shared_ptr<Figura> cilindro = std::make_shared<Cilindro>(Cilindro());
+	std::shared_ptr<Figura> circulo = std::make_shared<Circulo>(Circulo());
+	std::shared_ptr<Figura> esfera = std::make_shared<Esfera>(Esfera());
+	std::shared_ptr<Figura> triangulo = std::make_shared<Triangulo>(Triangulo());
+}
+
+Figura* FactoriaPrototipos::getPrototipo(TFiguras figura) {
+}
+
+FactoriaPrototipos::~FactoriaPrototipos() {
+	// TODO Auto-generated destructor stub
+}
+

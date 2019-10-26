@@ -1,0 +1,81 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: antonio
+ */
+
+
+#include <iostream>
+#include <memory>
+
+#include "Matemp.h"
+#include "Matriz.h"
+
+void test_unique_ptr(){
+	//Definir un array dinamico:
+	std::unique_ptr<int []> v;
+
+	v = std::make_unique<int []>(10);
+
+	for(int i=0;i<10;i++)
+		v[i]=i+1;
+
+	for(int i=0;i<10;i++)
+		std::cout << v[i] <<" ";
+	std::cout << std::endl;
+	// Se libera automaticamente.
+}
+
+void test_matriz(){
+
+	Matriz matriz(5,5,1);
+	matriz.imprimir();
+
+/*
+	matriz=matriz+matriz;
+	matriz.imprimir();
+
+	matriz=matriz*matriz;
+	matriz.imprimir();
+*/
+
+	Matriz matriz2(2,5,2);
+	matriz2.imprimir();
+	Matriz matriz3 = matriz2*matriz;
+	matriz3.imprimir();
+
+}
+
+void pruebaMatriz(){
+	Matriz m1(3,3,1);
+	Matriz m2(3,3,2);
+
+	Matriz resul = m1+m2;
+	Matriz prod = m1*m2;
+
+	std::cout << "m1: " << m1 <<std::endl;
+	std::cout << "m2: " << m2 <<std::endl;
+	std::cout << "Suma: " << resul <<std::endl;
+	std::cout << "Producto: " << prod <<std::endl;
+}
+
+void pruebaMatrizT(){
+	Matemp<int> h1(5,5,2);
+	Matemp<int> h2(5,5,2);
+
+	Matemp<int> r;
+	r=h1+h2;
+}
+
+void testMatrizPlantilla(){
+
+}
+
+int main(){
+	//test_unique_ptr();
+	//test_matriz();
+
+}
+
+

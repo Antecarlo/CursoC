@@ -1,0 +1,55 @@
+/*
+ * Vector.h
+ *
+ *  Created on: 27 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef VECTOR_H_
+#define VECTOR_H_
+
+#include<iostream>
+
+template <class T> class Vector{
+
+	T * conjunto;
+	int size;
+	int cont;
+
+public:
+
+	Vector(int tama=10);
+
+	//Constructor copia sobrecargado
+	Vector(const Vector<T> &v);
+
+	//Operador= sobrecargado
+	Vector & operator=(const Vector<T> & v);
+
+	void imprimir();
+
+	bool add(T elemento);
+
+	void set(int pos, T elemento);
+
+	virtual ~Vector();
+};
+
+///////////////////////// CPP ////////////////////////////
+
+template<class T> Vector<T>::Vector(int tama) {
+	this->size=tama;
+	this->conjunto=new T[tama];
+	this->cont=0; //Posicion libre que tenemos
+}
+
+template<class T> void Vector<T>::imprimir() {
+	for(int i=0;i<this->cont;i++){
+		std::cout << i <<": "<<this->conjunto[i] << std::endl;
+		std::cout << std::endl;
+	}
+}
+
+
+
+#endif /* VECTOR_H_ */

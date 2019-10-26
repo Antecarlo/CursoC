@@ -1,0 +1,32 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 30 sept. 2019
+ *      Author: antonio
+ */
+
+#include<iostream>
+#include<memory>
+
+#include"Figura.h"
+#include"Figura2D.h"
+#include"Figura3D.h"
+
+void test_error_abstract(){
+	//Figura f; ERROR
+	Figura *f;
+	std::unique_ptr<Figura>ptr; //Un smart pointer ok!
+
+	//NO SE PUEDEN INSTANCIAR DINAMICAMENTE OBJETOS DE CLASES ABSTRACTAS!
+	//f=new Figura;
+	//ptr=std::make_unique<Figura>("f1","red");
+}
+
+int main(){
+	test_error_abstract();
+}
+
+
+
+
+

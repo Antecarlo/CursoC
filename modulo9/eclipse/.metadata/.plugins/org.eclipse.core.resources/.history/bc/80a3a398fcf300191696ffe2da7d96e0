@@ -1,0 +1,18 @@
+/*
+ * Sucesor.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "Sucesor.h"
+
+Sucesor::Sucesor() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Sucesor::~Sucesor() {
+	// TODO Auto-generated destructor stub
+}
+

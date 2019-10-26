@@ -1,0 +1,69 @@
+/*
+ * Persona.h
+ *
+ *  Created on: 25 sept. 2019
+ *      Author: antonio
+ */
+
+#ifndef PERSONA_H_
+#define PERSONA_H_
+
+#include <string>
+
+class Persona {
+
+	friend std::ostream & operator <<(std::ostream &os, const Persona &p);
+
+	//Definicion de atributos
+		std::string nombre;
+		std::string apellidos;
+		float peso;
+		float altura;
+
+
+public:
+	//Constructor por defecto
+	Persona();
+
+	Persona(std::string,std::string,float,float);
+
+	virtual void dormir();
+	void hablar(Persona);
+
+	//Destructor
+	virtual ~Persona();
+
+	float getAltura() const {
+		return altura;
+	}
+
+	void setAltura(float altura) {
+		this->altura = altura;
+	}
+
+	const std::string& getApellidos() const {
+		return apellidos;
+	}
+
+	void setApellidos(const std::string& apellidos) {
+		this->apellidos = apellidos;
+	}
+
+	const std::string& getNombre() const {
+		return nombre;
+	}
+
+	void setNombre(const std::string& nombre) {
+		this->nombre = nombre;
+	}
+
+	float getPeso() const {
+		return peso;
+	}
+
+	void setPeso(float peso) {
+		this->peso = peso;
+	}
+};
+
+#endif /* PERSONA_H_ */

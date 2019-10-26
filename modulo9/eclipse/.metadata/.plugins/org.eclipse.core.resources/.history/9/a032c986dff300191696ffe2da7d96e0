@@ -1,0 +1,18 @@
+/*
+ * ExpresionNumerica.cpp
+ *
+ *  Created on: 21 oct. 2019
+ *      Author: antonio
+ */
+
+#include "ExpresionNumerica.h"
+
+ExpresionNumerica::ExpresionNumerica(double valor):valor(valor) {
+	// TODO Auto-generated constructor stub
+
+}
+
+ExpresionNumerica::~ExpresionNumerica() {
+	// TODO Auto-generated destructor stub
+}
+

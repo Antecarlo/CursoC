@@ -1,0 +1,18 @@
+/*
+ * constantes.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef CONSTANTES_H_
+#define CONSTANTES_H_
+
+#define N 100000
+
+#define T_BURB_100000 49.1364
+#define T_DIRE_100000 49.1364
+#define T_SORT_100000 49.1364
+
+
+#endif /* CONSTANTES_H_ */

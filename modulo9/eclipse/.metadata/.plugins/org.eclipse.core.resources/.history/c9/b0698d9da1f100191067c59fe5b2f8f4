@@ -1,0 +1,24 @@
+/*
+ * EnMarcha.h
+ *
+ *  Created on: 18 oct. 2019
+ *      Author: antonio
+ */
+
+#ifndef ENMARCHA_H_
+#define ENMARCHA_H_
+
+#include "State.h"
+
+class EnMarcha: public State {
+public:
+	EnMarcha();
+
+	void frenar();
+	void acelerar();
+	void contacto();
+
+	virtual ~EnMarcha();
+};
+
+#endif /* ENMARCHA_H_ */
